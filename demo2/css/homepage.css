@@ -1,0 +1,618 @@
+@charset "utf-8";
+ul,li{list-style:none}
+.clearfix:after { content: " "; display: block; clear: both; height: 0; }
+.clearfix { zoom: 1; }
+*{margin:0;padding:0}
+body{width:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration: none;}
+p{word-wrap:break-word;word-break:break-all;}
+.ui-loader{display: none;}
+.header{padding:0 10px;height: 34px;overflow:hidden;text-align: center;margin:0 auto;}
+.header a:visited{color:#000;}
+.bt_lanmu,.bt_hotask{float:left;margin-top:4px;height:26px;width: 26px;}
+.bt_hotask{margin-left:26px;}
+.to_ask{float:right;margin-top:4px;height:26px;width: 26px;}
+.ask_icon{display: block;width: 27px;height: 27px;background: url(//file.thepaper.cn/wap/v3/img/ask_logo40.png) no-repeat;background-size: 27px auto;}
+
+span.list_lanmu{display: block;width: 26px;height: 26px;}
+span.hot_ask{display: block;width: 26px;height: 26px;}
+.bt_login{width: 26px;height:26px;display: block;overflow:hidden;margin:4px 26px 0 0;float:right;background: url(//file.thepaper.cn/wap/v3/img/login_info40.png) no-repeat;background-size: 26px auto;}
+.login_f{background-position: 0 -26px;}
+.bt_login a{width: 26px;height:26px;display: block;}
+.bt_login a img{width: 26px;height:26px;}
+
+.list_lanmu{background: url(//file.thepaper.cn/wap/v3/img/ydw_chl.png) no-repeat;background-size: 26px auto;}
+.bt_cur{background-position: 0  -26px;}
+.hot_ask{background: url(//file.thepaper.cn/wap/v3/img/ydw_hotask.png) no-repeat;background-size: 26px auto;}
+.logo_b{width: 100%;text-align: center;margin-top: 15px;margin-bottom:30px;}
+.p_logo{width: 93px;height: 30px;background: url(//file.thepaper.cn/wap/v3/img/logo_wap.png) no-repeat;background-size: 93px auto;margin:3px auto 0;display: block;}
+.toutiao{position: relative;}
+.toutiao .topic_panel_fallsbg{margin: -15px 0 0;}
+.toutiao_img{display: block; min-height: 120px;position: relative;padding:0 10px;}
+.select_img{display: block;min-height: 120px;position: relative;}
+.toutiao_txt{position: relative;padding: 2px 10px 8px;border-bottom: 1px solid #e9e9e9;}
+.toutiao_txt+.t_news .topic_panel_fallsbg{padding-top: 10px;margin: -15px 0;}
+.news_info{color: #b4b4b4;font-size: 10px;height: 12px;line-height: 11px;position: relative;}
+.news_info a{color:#b4b4b4;height: 14px;line-height:13px;float:left;display:block;max-width: 72px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.news_info .t_label{bottom:1px !important;}
+
+.label_video{display: inline-block; position: absolute;color: #fff;  bottom: 12px; right: 20px;padding: 2px 5px; background: rgba(0,0,0,0.3);}
+
+.news_time{font-size: 10px;height: 12px;line-height:11px;float:left;display:block;}
+.news_time img{height: 12px;vertical-align: text-top;margin-top:0px;}
+.bgimg_time{line-height: 13px;display:block;margin-left:6px;/*padding-left:13px;background: url(//file.thepaper.cn/wap/v3/img/ydw_time.png) no-repeat 0 0px;background-size: 10px auto;*/}
+.bgimg_comm{line-height: 12px;display:block;margin-left:6px;padding-left:13px;
+background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABQUlEQVRIS+2WPWqFQBSFz0xAsXAJgk1qO73LeNUrAimyhawjkC0EAtlA1hAYuzSCRQrt0giKWqnPYELI3/MxP4IEnPrO+TzniFeGlQ5biYsN/J68EOIewAUAbljFAcADEV3+1jkatRBiWAD6yToQ0ZkseDR0+uM6Ef0xOOd4fTBjDL7vw7IsqRD6vkeWZRiGqa2Po+XYtm0EQYDpAWRPkiRomsYMPN12HEfJcdu2/7hj2XhPzWl1PAl6nncy6qIoUJblLFsLLPNyVVWFNE2XBU9qruvOOh7HEXVdo+u65cGmPWtFbQrV/oBsYJ0E1ur4hYjOVfdxxzm/AfD8fdvIumaMDZzzpzAMX5XAnPOrMAzvZEEqc7M/Aoyx2yiKrlXEVGaPguM4fszzfLff77+2uYqqxKz8dpcQUxnZwCppGc2+AUvklB89V3L1AAAAAElFTkSuQmCC) no-repeat;
+background-size: 14px auto;
+}
+.num_ask{min-width: 14px;height: 13px;line-height: 15px;padding-left:15px;background: url(//file.thepaper.cn/wap/v3/img/num_ask.png) no-repeat;background-size: 13px 13px;float: right;}
+.num_ask_{min-width: 14px;height: 13px;line-height: 13px;padding-left:15px;background: url(//file.thepaper.cn/wap/v3/img/num_ask_13.png) no-repeat;float: right;}
+.news_tit01{font-size: 20px;line-height: 28px;padding-bottom: 6px;color: #000;}
+.news_tit01 a{color:#2d2d32;font-size:1em;}
+
+.list_hp{/*padding: 0px 10px 20px;*/overflow: hidden;}
+.t_news_bg{padding:0 10px;}
+.t_news_header{height: 35px;margin-bottom: 15px;}
+.t_news_header .logo{position:relative;float:left;margin-right:15px;width:32px;height:32px;}
+.t_news_header .logo .media_vip{background: url(//file.thepaper.cn/wap/v3/img/medias_vip_small.png) no-repeat; position: absolute;bottom: -1px;right: -2px; background-size: 15px 15px; width: 15px;height: 15px;}
+.t_news_header .logo img{width:100%;height:100%;border-radius:50%;border: 1px solid #DFDFDF;}
+.tnh_infor{float:left;}
+.tnh_title{font-size:14px;color:#333;}
+.tnh_date{font-size:12px;color:#999;}
+.t_news_bg .t_news{border-bottom: 1px solid #efefef;}
+.toutiao .t_news+.t_news .topic_panel_fallsbg{margin:-15px 0;}
+.t_news{min-height:60px;padding:29px 0 29px;border-bottom: 1px solid #e9e9e9;overflow: hidden;position: relative;}
+.t_news .topic_panel_fallsbg{padding-top:0;}
+.topic_spe{
+    font-size: 16px;
+    color:#999999;
+}
+.topic_spe_thum{
+    margin-bottom:10px;
+    width:100%;
+    position: relative;
+}
+.topic_spe_thum img{
+    width:100%;
+}
+.topic_spe_go{
+    font-size:16px;
+}
+.topic_spe_thum span{
+    padding: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    font-size: 18px;
+    color: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+.img_t{width:162px;min-height: 162px;margin-right:10px;overflow:hidden;float: left;position: relative;}
+.img_t img{display:block;}
+.select_img .label_videos,
+.toutiao_img .label_videos{position:absolute;bottom: 0;right: 0;font-size: 16px;color: #FFFFFF;background: rgba(0, 0, 0, 0.35);padding: 2px 11px 2px 32px;}
+.searchresult_item .label_videos,
+.img_t .label_videos{position:absolute;bottom: 0;right: 0;font-size: 12px;color: #FFFFFF;background: rgba(0, 0, 0, 0.35);padding: 1px 5px 1px 24px;}
+.select_img .label_videos .icon,
+.toutiao_img .label_videos .icon{background: url(//file.thepaper.cn/wap/v3/img/icon_label_videos.png) no-repeat;background-size:20px; display: block; width: 20px;height: 20px;position: absolute;left: 6px;}
+.searchresult_item .label_videos .icon,
+.img_t .label_videos .icon{background: url(//file.thepaper.cn/wap/v3/img/icon_label_videos.png) no-repeat;background-size:16px; display: block; width: 16px;height: 16px;position: absolute;left: 6px;}
+.select_img .label_videos{bottom: 3px;right: 1px;}
+.toutiao_img .label_videos{bottom: 3px;right: 10px;}
+.img_t .label_video{bottom:0;right:0}
+.txt_t{position: relative;height: 60px;margin-left:70px;}
+.img_t .m {width: 50%;height: 50%;position: absolute;left: 25%;top: 25%;display: block;}
+.hotask_t{clear:both;line-height: 20px;font-size: 14px;border-top: 1px dashed #bfbfbf;margin-top: 7px;padding-top: 3px;color: #555555;}
+.hotask_t.hotask_t_add{border: none;margin-top: 10px;padding-top: 0;margin-bottom: -5px;}
+.hotask_t span{color: #00a5eb;font-size: 12px;margin-right: 10px;}
+.hotask_t img{height: 12px;vertical-align: middle;margin:5px 10px 0 0;float:left;}
+.hotask_t a{color: #555555;font-size:12px;}
+.news_tit02{font-size: 16px;color: #000;height:40px;line-height: 20px;margin-bottom:111px;overflow:hidden;}
+.news_tit02 p a{color:#2d2d32;word-break: normal;word-wrap: break-word;display:block;width:100%;height:40px;overflow:hidden;font-size:18px;}
+.news_tit02 p a:visited{color:#ccc;}
+
+.t_label{position: absolute;bottom: 0px;right: 0;width:30px;height: 14px;display:block;}
+.t_label img{width:30px;height: 14px;}
+.more_bt{width:140px;height: 28px;line-height: 28px;font-size: 11px;text-align: center;color: #7f7f7f;border: 1px solid #a1a1a1;border-radius:2px;display: block;margin:20px auto 0;}
+
+.bottom{box-shadow: 0 -1px 5px #9a9a9a;-webkit-box-shadow: 0 -1px 5px #9a9a9a;margin-top: 3px;}
+
+.bottom a:visited {color:#fff;}
+.about,.copyright{padding:0 6%;}
+.about{background-color: #646464;font-size:14px;line-height: 32px;padding:14px 6%;}
+.copyright{font-size: 11px;line-height: 20px;color: #fff;background-color: #333333;padding: 5px 6%;}
+
+/*首页展开栏目*/
+.header02{border-bottom: 1px solid #a7a7a7;}
+.lanmu_q{background-color: #ffffff;width: 100%;position: absolute;z-index: 999;}
+.lanmu_q td {line-height: 50px;font-size:18px;overflow: hidden; border-bottom: 1px solid #c8c8c8;border-collapse: collapse;}
+.lanmu_q td img{margin:10px;border-radius: 2px;}
+.lanmu_q td img,.lanmu_q td span{float:left;}
+.lanmu_q td.td_lan_l{border-right: 1px solid #c8c8c8;}
+.lanmu_cz{padding:10px 10px 8px 10px;height: 25px;overflow: hidden;border-bottom: 1px solid #c8c8c8;text-align: center;position: relative;clear:both;}
+.lanmu_p{float: left;padding: 2px 8px;}
+.lanmu_n{float: right;padding: 2px 8px;}
+.lanmu_shouqi{position: absolute;bottom:6px;left:0;right:0;padding:6px 0;}
+
+/*广告位*/
+.adsame-banner-box{width:100% !important;height:auto !important;}
+.adsame-banner-box img{width:100% !important;height:auto !important;}
+
+/*alert*/
+.overlay{display:none;position:fixed;left:0;bottom:0;z-index:9990;width:100%;height:100%;background-color:#000;opacity:.6;filter:Alpha(opacity=60)}
+.tiptitle{position:fixed;left:0;bottom:44%;width:100%;height:130px;display:none;z-index:10000;}
+.tiptitlebd{position: relative;margin: 0 auto; height: 130px; width: 280px; padding: 0;overflow:hidden; background: #ffffff; text-align:center;}
+.tiptitleStr{margin:0 auto;padding:14px 12px 6px;line-height:26px;max-height:48px;overflow:hidden;font-size:20px;text-align:center;}
+.tipbtspan{display:inline-block;margin-top:12px;}
+.tiptitleOK{float:left;width:80px;line-height:36px;font-size:18px;text-align:center;cursor:pointer;border:1px solid #ccc;color:#248bf2;}
+.tiptitleNO{float:left;margin-left:15px;width:80px;line-height:36px;font-size:18px;text-align:center;cursor:pointer;border:1px solid #ccc;color:#248bf2;}
+
+.back-to {bottom: 52px;right:20px;position:fixed;z-index:999;display:none;}
+.back-to .back-top {background: url(//file.thepaper.cn/wap/v3/img/back_top.png) no-repeat scroll 0 0 transparent;background-size:41px 41px !important;display: block;float: right;height:41px;outline: 0 none;width: 41px;border:1px solid #cccccc;border-radius: 4px;opacity: 0.8;}
+.back-to .back-top:hover {background-position: 0 0;opacity: 0.6;}
+
+/*1.5*/
+.channel_tab{width:100%;height:38px;margin: 2px 0 10px;background:#01a5ec;}
+.channel_tab a{width:15.9%;height:38px;line-height:38px;text-align:center;color:#ffffff;font-size:16px;font-family:"微软雅黑";display:block;float:left;}
+.channel_tab a.on{background:#51c7f9;font-size:1.7em;}
+/*.channel_tab a:hover{color:#f2f2f2;}*/
+.chnfloat {position: fixed!important;left: 0;top: 0;z-index: 100;margin:0;overflow: hidden;}
+.channel_tab a.t-first{ text-align: left; padding-left: 12px; width: 15.4%; }
+.channel_tab a.t-last{ width: 15.4%; padding-right: 5px; float: right; text-align: right; }
+.channeltab-panelbg{position:relative;height: 45px;width:100%;}
+.channeltab-panelbg .gblock{z-index:200;position:absolute;width: 22px;height: 45px;top:0;opacity: 1;}
+.channeltab-panelbg .gl{left:0;background: linear-gradient(to left,rgba(255,255,255,0) 0%,rgba(255, 255, 255, 0.8) 60%);}
+.channeltab-panelbg .gr{right:0;background: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255, 255, 255, 0.8) 60%);}
+
+.list_lm{width:100%;height:38px;margin-top: 2px;background:#01a5ec;}
+.list_lm a{width:25%;height:38px;line-height:38px;text-align:center;color:#ffffff;font-size:16px;font-family:"微软雅黑";display:block;float:left;}
+.list_lm a.on{background:#51c7f9;}
+.list_lm a:hover{color:#f2f2f2;}
+
+.sliderchl{width:100%;background-color: #ffffff;}
+.sliderchlUl{width:100%;height:305px;}
+.sliderchl_lanmu{width:100%;height:305px;}
+.sliderchl_lanmu li{width:50%;height:60px;line-height: 60px;font-size:16px;overflow: hidden; border-bottom: 1px solid #c8c8c8;float:left;}
+.sliderchl_lanmu li a{width:100%;height:60px;display:block;}
+.sliderchl_lanmu li img{width:40px;margin:10px;float:left;}
+.li_lan_l{border-right: 1px solid #c8c8c8;margin-left:-1px;}
+
+/*1.5*/
+.app_down{height:80px;margin:0 0; background:#80d3f5;font-size:20px;line-height:80px;overflow:hidden;}
+.app_down a{color:#4f5259;width:100%;height:80px;display:block;}
+.app_down .logimg{width:56px;height:56px;margin: -5px 8px 0 10px;}
+.app_down .downimg{width:24px;height:24px;margin: -3px 0 0 8px;}
+
+/*3.0*/
+.app_down2{display: none;margin:0 0;height:80px;background: url(//file.thepaper.cn/wap/v3/img/down_bg640.jpg) no-repeat;background-size: 100% 100%;overflow:hidden;}
+.app_down2 a{color:#fff;width:100%;height:80px;display:block;}
+.app_down2 .logimg{float:left;width:50px;height:50px;margin: 15px 12px 0 20px;}
+.app_down2 a span{float:left;width:162px;height:44px;padding:3px 0;margin-top:15px;display:block;line-height:22px;font-size:17px;font-weight: bold;color:#fff;}
+.app_down2 .downimg{float:left;width:34px;height:34px;margin: 23px 0 0 2px;}
+
+.app_down3{margin:10px 0 20px;height:80px;background: url(//file.thepaper.cn/wap/v3/img/down_bg640.jpg) no-repeat;background-size: 100% 100%;overflow:hidden;}
+.app_down3 a{color:#fff;width:100%;height:80px;display:block;}
+.app_down3 .logimg{float:left;width:50px;height:50px;margin: 15px 12px 0 15px;}
+.app_down3 a span{float:left;width:162px;height:44px;padding:3px 0;margin-top:15px;display:block;line-height:22px;font-size:17px;font-weight: bold;color:#fff;}
+.app_down3 .downimg{float:right;width:34px;height:34px;margin: 23px 5px 0 23px;}
+
+.app_fixed {margin-top: 10px;width: 100%;height: 56px;position:fixed;z-index: 1;bottom:0px;}
+.app_down4{position: fixed;bottom:0;left:0;z-index:99;width:100%;height:56px;/*background-color: #474747; opacity: .9; filter: alpha(opacity=90);*/ background:url(//file.thepaper.cn/wap/v3/img/floating-bg.png) repeat-x;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#474747,endColorstr=#474747); zoom: 1;}
+.app_down4 a{float:left;width:65%;height:56px;display:block;font-size:16px;font-weight: bold;color:#fff;}
+.app_down4 a b{font-size:16px;}
+.app_down4 a .first{display: inline-block;margin-top:8px;}
+.app_down4 .logimg{float:left;width:38px;height:38px;margin: 9px 14px 0 10px;}
+.app_down4 span{float:right;margin-top:15px;margin-right:20px;width:62px;height:24px;display:block;background:#eb6807;text-align:center;line-height:25px;font-size:13px;font-weight: bold;color:#fff;}
+.app_down4 .closeimg{float:right;width:20px;height:20px;margin: 18px 10px 0 0px;}
+
+/*login2.0*/
+#bg_overlay {width: 100%;height: 100%;background: #000;display: none;position: fixed;left: 0;top: 0;z-index: 999990;opacity:0.6;filter: alpha(opacity=60);-moz-opacity: 0.6;}
+.lg_wds_pst{position:absolute;left:0;top:56px;width:100%;min-height:294px;z-index:999999;}
+.lg_pd10{padding:0 10px;}
+.lg_pd10 *{box-sizing: content-box;}
+.lg_wds{position:relative;margin:0 auto;background-color:#ffffff;min-height:294px;padding:7px 10px 5px;font-family:"微软雅黑";margin-top:-24px;}
+.lg_wds_title{width:100%;height:28px;line-height:24px;font-size:16px;color:#00a5eb;border-bottom: 1px solid #d3d3d3;}
+.lg_wds_prompt{width:100%;height:30px;line-height:30px;padding: 4px 0;font-size:14px;overflow:hidden;}
+.lg_wds_prompt2{width:100%;height:30px;line-height:30px;font-size:12px;text-align:right;color:#939393;overflow:hidden;}
+.lg_wds_tplg{width:99.5%;height:32px;border: 1px solid #f2f2f2;background-color:#f1f1f1;}
+.lg_wds_tplg span{height:32px;line-height:32px;font-size:12px;text-indent:4px;float:left;}
+.lg_wds_tplg a{width:32px;height:32px;line-height:32px;display:block;float:right;margin:0 3px 0 2px;}
+.tplgrr{background: url(//file.thepaper.cn/wap/v3/img/log_db.png) no-repeat center center;background-size: auto 20px;}
+.tplgtx{background: url(//file.thepaper.cn/wap/v3/img/log_qq.png) no-repeat center center;background-size: auto 20px;}
+.tplgsn{background: url(//file.thepaper.cn/wap/v3/img/log_wb.png) no-repeat center center;background-size: auto 20px;}
+.tplgwx{background: url(//file.thepaper.cn/wap/v3/img/log_weixin.png?v=1) no-repeat center center;background-size: auto 21px;}
+.lg_wds_inp{width:100%;height:34px;margin-top:12px;}
+.lg_wds_dynCode{width:130px;height:32px;line-height:32px;float:left;text-align:right;position:relative;cursor: pointer;}
+.lg_wds_dynCode img{float:left;margin:1px 0 0 2px;}
+.lg_wds_dynCodetxt{width:50px;height:32px;display:block;line-height:32px;position:absolute;left:84px;top:2px;text-align:left;}
+.lg_wds_ts{width:100%;min-height:20px;line-height:20px;padding:5px 0;font-size:12px;color:#ff0000;}
+.lg_wds_bt{width:100%;height:34px;line-height:34px;font-size:14px;text-align:center;color:#ffffff;background-color:#00a5eb;cursor: pointer;}
+.lg_wds_bt:hover{background-color:#7a7a7a;}
+.lg_wds_rmmi{width:100%;height:34px;line-height:34px;font-size:12px;}
+.lg_wds_rmmi .lg_rem{float:left;}
+.lg_wds_rmmi .lg_forget{float:right;cursor: pointer;}
+.lg_wds_rmmi .lg_reg{float:right;cursor: pointer;margin-left:20px;}
+
+.getdynCode_wds{width:25%;height:34px;line-height:34px;font-size:12px;color:#ffffff;text-align:center;background-color:#00a5eb;float:right;cursor: pointer;}
+.lg_wds_agreement{width:94%;height:272px;padding:8px 10px;line-height:24px;border: 1px solid #f2f2f2;overflow-y:auto;font-size:12px;}
+.lg_wds_agreement .su_h2,
+.lg_wds_agreement h2{font-size:18px;line-height:30px;margin-bottom:8px;text-align:center;}
+.lg_wds_agreement p{text-indent: 2em;}
+.lg_wds_weiboagree .lg_wds_agreement{display:block!important;}
+.wds_close{position:absolute;width:24px;height:24px;right:10px;top:6px;cursor: pointer;background: url(//file.thepaper.cn/wap/v3/img/ck_closebg_.png) no-repeat 0 0;}
+.wds_close:hover{background-position: 0 -24px;}
+.wds_input{width:99.5%;height:14px;line-height:14px;padding: 9px 0;text-indent:6px;font-size:12px;border: 1px solid #d3d3d3;font-family:"微软雅黑";float:left;color: #999;}
+.wds_select{}
+
+.line_nn{border-bottom:1px solid #e0e0e0;position:relative;height:8px;width:100%;}
+.tri_rig1{position:absolute;width:0; height:0; border-width:6px; border-color:transparent transparent #e0e0e0 transparent; border-style:dashed dashed solid dashed; overflow:hidden; bottom:0px; left:20px;}
+.tri_rig2{position:absolute;width:0; height:0; border-width:6px; border-color:transparent transparent #fff transparent; border-style:dashed dashed solid dashed; overflow:hidden; bottom:-1px; left:20px;}
+/*gwl upd0714*/
+body{ font-family: "微软雅黑"; padding: 0; margin: 0; border: 0; }
+.channeltab-panel{width: 100%;transition: opacity .2s ease-out;opacity: 0;overflow: scroll;height: 80px; background-color: #eeeef3;margin-bottom:10px; /*border-top: 1px solid #c2c2c2;*/}
+.channel_tab{background: #eeeef3;margin: 0;height: auto;width: 500px;min-width: 100%;}
+.channel_tab a.on{ color: #00a5eb; background: none;}
+.channel_tab a{color: #2d2d32;font-size: 1.1em;width: 12.5%;height: 80px;line-height: 80px;text-align: center;display: block;float: left;position: relative;}
+/*.channel_tab a:hover{color: #00a5eb;}*/
+.channel_tab a.last1{  }
+.line-bg{ display: inline-block; width: 1px; height: 25px; background-color: #bcbcbe; color:#bcbcbe; position: absolute; right: 0; top: 29px; }
+
+
+.newdetail_header{display:none;margin:0 auto;line-height:36px;height: 40px;overflow: hidden;padding: 0 10px;text-align: center;position: relative;border-bottom: 1px solid #D1D1D1;color: #01A5EC;font-size: 22px;}
+.h_back{top:10px;padding:2px 8px;cursor:pointer;}
+
+/*new search*/
+
+.searchinput *{box-sizing:border-box;letter-spacing: 1px;font-size: 0.15rem;}
+.more_bt {width: 140px;height: 28px;display: block;margin:15px auto;border: 1px solid #a1a1a1;border-radius: 2px;color: #7f7f7f;font-size: 11px;line-height: 28px;text-align: center;}
+.search_title{font-size: 0.22rem;color: #666;margin-top: 0.20rem;}
+.searchinput {margin:10px auto 0;padding:0 10px;}
+.searchbd {height: 0.6rem;margin-left: 0px;border-bottom: 2px solid black;position: relative;overflow: auto}
+.searchinput .searchbd input {width: 100%;height:100%;padding:0 1.2rem 0 0.6rem;font-size: 0.3rem;color: #000000;box-sizing: border-box;}
+.searchinput .searchbd span.searchIcon{height: 0.3rem;width: 0.3rem;cursor: pointer;background-color: #ffffff;background: url(//file.thepaper.cn/wap/resource/v3/img/ydw_searchicon5252.png) no-repeat 0px 1px;background-size: 100%;position: absolute;top:0.14rem;z-index: 1;}
+.searchinput .searchbd .search_return {position: absolute;right: 0;top:0.10rem;font-size: 0.3rem;}
+.searchinput .searchbd .search_clear{position: absolute;right: 0.7rem;top: 0.18rem;width: 0.3rem;display: inline-block;background: url(//file.thepaper.cn/wap/v3/img/down_close42.png) no-repeat;height: 0.3rem;background-size: 0.3rem;}
+
+
+.searchresult {padding: 0.1rem 0.3rem 0.3rem;width: 100%;box-sizing: border-box;}
+.nosearchrs {height: 280px;line-height: 280px;font-size: 0.25rem;color: #666666;text-align: center;clear: left}
+.search_tabs {padding: 0 0.3rem;margin: 0.5rem 0 0.36rem;}
+
+/* 添加的样式 */
+.result_panel ul.clearfix {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DFDFDF;
+    justify-content: space-between;
+}
+.result_panel ul.clearfix:after{
+    content:none;
+}
+.search_tabs li .tab_on {color: #00a5eb; border-bottom:2px solid #00a5eb}
+.search_tabs li a {outline: none;font-size:0.30rem;color: #999999;padding-bottom: 0.12rem;display: inline-block}
+
+.recommend_search{display:none;transition: all 0.5s;}
+.recommend_search .history_ul{height:auto;max-height:2.0rem;overflow: hidden;}
+.recommend_search .history_search{border-bottom: 1px solid #cecece;}
+.lx_search li,
+.recommend_search .history_search li{font-size:0.25rem;margin: 0.30rem 0;height: 0.30rem;line-height: 0.30rem;}
+.recommend_search .search_icon{display: inline-block;vertical-align: middle;width: 0.24rem;height: 0.24rem;background-size: 0.24rem!important;}
+.recommend_search .search_icon_clock{margin-right:0.15rem;background:url(//file.thepaper.cn/wap/resource/v3/img/user_time_icon.png) no-repeat;}
+.recommend_search .search_icon_delete{float:right;background:url(//file.thepaper.cn/wap/resource/v3/img/t_open_t.png) no-repeat;}
+.recommend_search .search_icon_tri{margin-left: 10px;background:url(//file.thepaper.cn/wap/resource/v3/img/t_open.png) no-repeat;}
+.recommend_search .all .search_icon_tri{margin-left: 10px;background:url(//file.thepaper.cn/wap/resource/v3/img/t_close.png) no-repeat;background-position: 0px 3px;}
+.recommend_search .all .history_ul{max-height:initial!important;}
+.recommend_search .all .history_ul{max-height:inherit!important;}
+.recommend_search .show_search_more{text-align: center;margin: 0.21rem 0;color: #9c9a9a;font-size: 0.21rem;height: 0.32rem;line-height: 0.32rem;}
+.recommend_search .hot_search .hot_label{color:#00A5EB;font-size:0.21rem;float:left;}
+.recommend_search .hot_search .hot_name{float: left;color: #adadad;border: 1px solid #adadad;border-radius: 2px;padding: 2px 5px;margin-right: 10px;margin-bottom: 10px;}
+.recommend_search .hot_search .hot_name:first-child{margin-left:100px;font-size:0.21rem;}
+.recommend_search .hot_search .hot_item{width: 50%;float: left;margin: 0.16rem 0;padding-right: 0.1rem;font-size: 0.25rem;height: 0.355rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+
+.searchresult_item{border-bottom:1px solid #DFDFDF;padding: 0.2rem 0;}
+.searchresult_item em{font-size: 1em;font-style: normal;color: #00a5eb;}
+.searchresult_item .item_left{position:relative;width:1.40rem;height:1.40rem;float: left;}
+.searchresult_item .item_left .item_left_img{width:100%;}
+.searchresult_item .item_left .label_common{box-sizing: border-box;width:auto;right:0;text-align: center;position: absolute;color: #fff;bottom: 0;font-size: 0.18rem;padding: 2px 5px;background-color: rgba(0, 0, 0, 0.75);}
+.searchresult_item .item_left .label_on_air{width: 100%;}
+.searchresult_item .item_left .on_air_point{border-radius: 100%;width: 0.08rem;display: inline-block;margin-right: 0.08rem;height: 0.08rem;background-color: red;}
+.searchresult_item .item_left+.item_right{width:5.30rem;}
+.searchresult_item .item_right{width:100%;float:right;}
+.searchresult_item .item_right .item_title{font-size: 0.32rem;color:#333}
+.searchresult_item .item_right .highlight{ font-size: 1em;  font-style: normal; color: #00a5eb;}
+.searchresult_item .item_right .item_content{font-size: 0.24rem;color:#999;margin:0.1rem 0 0.22rem;min-height: 0.2rem;}
+.searchresult_item .item_right .item_right_footer{float:right;}
+.searchresult_item .item_right .item_right_footer>div{float: left;margin-right: 0.30rem;color: #666;font-size: 0.20rem;line-height: 0.38rem;    height: 0.38rem;}
+.searchresult_item .item_right .footer_name{width: 1.88rem;text-align: right;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.searchresult_item .item_right .item_icon{display: inline-block;width: 14px;height: 14px;margin-right: 5px;margin-top: 0.05rem;    vertical-align: sub;background-size: 14px;}
+.searchresult_item .item_right .icon_clock{background-image: url(//file.thepaper.cn/wap/v3/img/ydw_time.png);}
+.searchresult_item .item_right .icon_talk{background-image: url(//file.thepaper.cn/wap/v3/img/ydw_comm.png);}
+.searchresult_item .item_left .label_common .icon_topic {
+    background: url(//file.thepaper.cn/wap/v3/img/search_topic.png) no-repeat;
+    background-size: 12px;display: inline-block;width: 12px;height: 12px;z-index: 10;margin: 2px 5px;vertical-align: middle;
+}
+/*基于750-rem 媒体号搜索*/
+.search_media .searchbd{height: 0.76rem;font-size: 0.30rem;}
+.search_media .searchinput .searchbd .search_return{font-size: 0.30rem;}
+.search_media .searchinput .searchbd .search_clear,
+.search_media .searchinput .searchbd span.searchIcon{top: 0.2rem;}
+.search_media .searchinput .searchbd span.searchIcon{background:url(//file.thepaper.cn/wap/v3/img/medias_search.png) no-repeat;background-size: 100%;}
+.searchresult_media{padding:0.3rem 0;border-bottom:1px solid #ECEEEE;height: 0.66rem;}
+.searchresult_media .thumb{float:left;width:0.66rem;height:0.66rem;position:relative;margin-right:0.2rem;}
+.searchresult_media .thumb img{border: 1px solid #DFDFDF;width:100%;height:100%;border-radius:50%;}
+.searchresult_media .thumb .media_vip{position:absolute;width:0.22rem;height:0.22rem;background-size: 0.22rem;bottom:0;right:0;}
+.searchresult_media .name{float:left;width:3.20rem;font-size: 0.28rem;line-height:0.66rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.searchresult_media .btn{text-align:center;float:right;background: #00A5EB;border-radius: 0.26rem;width:1.70rem;line-height:0.52rem;font-size: 0.24rem;color: #FFF;margin-top: 0.07rem;}
+/******专题瀑布流*******/
+.topic_panel_falls {background:#fff;padding:0 10px;}
+.topic_panel_falls .title{font-size: 18px;color: #00A5EB;padding-top:10px;}
+.topic_panel_btn a,
+.topic_panel_falls .title a{color: inherit;}
+.topic_panel_fallsbg{background: #efefef;padding:10px 0;margin: -15px 0;}
+.topic_panel_btn{font-size: 16px;color: #999;text-align:center;padding: 10px 0;}
+/*搜索*/
+.searchresult .pph_swiper{
+    padding-right: 0.32rem;
+    position: relative;
+}
+.searchresult .swiper-wrapper {
+    display:flex;
+}
+.searchresult .pph_swiper .swiper-slide{
+    width:auto;
+    display:inline-block;
+
+}
+
+.searchresult .pph_item{
+    width:2.00rem;
+    height:2.40rem;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 4px 8px 0px rgba(226,226,226,0.5);
+    border-radius:0.08rem;
+    border:1px solid rgba(241,241,241,1);
+    padding:0.24rem  0.26rem 0.3rem;
+    text-align: center;
+    margin-right:0.2rem;
+    box-sizing:border-box
+}
+.searchresult .pph_item_thum img{
+    width:1.00rem;
+    height:1.00rem;
+    border:1px solid rgba(223,223,223,1);
+    border-radius: 50%;
+    margin-bottom:0.06rem;
+    box-sizing:border-box
+}
+.searchresult .pph_item_name{
+    text-align: center;
+    width:1.48rem;
+    font-size:0.24rem;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.searchresult .pph_item_name span {
+    font-size:0.24rem;
+    color: #00A5EB;
+}
+
+.searchresult .pph_item_label{
+    width:0.60rem;
+    height:0.30rem;
+    color:rgba(0,165,235,1);
+    border-radius:0.04rem;
+    border:1px solid rgba(0,165,235,1);
+    line-height: calc(0.30rem - 2px);
+    margin:0 auto;
+    margin-top:0.2rem;
+   -webkit-box-sizing: border-box;
+    box-sizing: border-box;}
+.searchresult .pph_swiper_btn{
+    position: absolute;
+    right:-0.3rem;
+    top:-0.06rem;
+    width:0.60rem;
+    height:2.46rem;
+    background:rgba(247,247,247,1);
+    border-radius:0.12rem 0px 0px 0.12rem;
+    font-size:0.24rem;
+    color:#333;
+    text-align: center;
+    padding: 1rem 0.1rem 0;
+    box-sizing:border-box;
+}
+.searchresult .pph_swiper_btn:before{
+    position: absolute;
+    content: "...";
+    display: block;
+    left: 0.22rem;
+    top: 0.6rem;
+}
+.searchresult .line{
+    width:7.50rem;
+    height:0.20rem;
+    background:rgba(246,246,246,1);
+    margin:0.3rem 0;
+    margin-left:-0.3rem;
+}
+.searchresult .user_nav>div{
+    font-size: 0.24rem;
+    width:1.20rem;
+    height:0.48rem;
+    text-align: center;
+    line-height: 0.48rem;
+    border-radius:0.04rem;
+    border:1px solid rgba(223,223,223,1);
+    float:left;
+    margin-right:0.3rem;
+    color:#999;
+}
+.searchresult .user_item{
+    padding:0.2rem 0;
+    border-bottom: 1px solid #DFDFDF;
+}
+/* 添加的样式 */
+.pph_item .pph_item_thum {
+    width: 1rem;
+    height:1rem;
+    margin:0 auto;
+    position:relative;
+}
+.pph_item .pph_item_thum .icon_vip {
+    background: url(//file.thepaper.cn/wap/v3/img/user_v22.png) no-repeat 0 0px;
+    background-size: 100%;
+    width: 0.36rem;
+    height: 0.36rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* 增加的样式 */
+.searchresult .user_item:nth-child(1) {
+    padding-top: 0;
+}
+
+.searchresult .user_item a {
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.searchresult .user_nav>div.on{
+    color:#00A5EB;
+    border:1px solid #00A5EB;
+}
+
+.searchresult .user_panel_left {
+    float:left;
+    position: relative;
+}
+.searchresult .user_panel_left img{
+    width:1.20rem;
+    height:1.20rem;
+    border-radius: 50%;
+    border:1px solid rgba(151,151,151,1);
+    box-sizing: border-box;
+}
+.searchresult .user_panel_right{
+    float: right;
+    width: 5.6rem;
+    height: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.searchresult .user_panel_title{
+    font-size:0.28rem;
+    color:#333;
+}
+.searchresult .user_panel_title span {
+    font-size:0.28rem;
+    color: #00A5EB;
+}
+.searchresult .user_panel_title .user_name{
+    max-width: 3.4rem;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: sub;
+}
+
+.searchresult .user_panel_des{
+    font-size:0.24rem;
+    color:#999;
+    height:0.33rem;
+    margin:0.08rem  0 0.04rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.searchresult .user_panel_extra{
+    font-size:0.20rem;
+    color:#999;
+}
+.searchresult .title_label{
+    padding:0 0.08rem;
+    border-radius:0.04rem;
+    border:1px solid rgba(0,165,235,1);
+    font-size:0.20rem;
+    color:#00A5EB;
+    margin-left:0.1rem;
+}
+.searchresult .user_panel_left .icon_vip{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAADqElEQVRIS72WW0xcVRSGvz2Xw8wwMAwgIsYYEihtg21tCxk1lEobaCMxpq2J8aV98MnLg01am1Qx2sak1cbEqA9e3owxsRITrUhbaluMJb2khTYSQkijRKhYchgKwzAzzDYbGHLmcuZM02T269l7fXut/f/rLIHFklIKoAl4DngKqAX8y8d0YBi4BJwCeoUQMltIFcx0SSn3AEf79VjdD6Pz9E7EGJqOMRlZilmmCeqKHTRVONj9WAHr/Y4h4G0hxEmzoBmBUspq4Nurk9HAWzdCnPs3alWIxe8tDzs5tsHD5jJnH/CyEOJ26sE0oJSyORqXJ9+8Nlv++XCYrPXJcA0V8NVaFx9vKrzrtIk9QogLxm1JQAXTI/L0rotB7fxELKeszDZtrXDQucUX8Wui1QhdAaoyRuPycuu5YPmDwhKXUNDTLT6VaWOivEbgpdevzAQ+Gw4/UGaph1+rdfFpg7dPCKEUziJQqfHqZPT7xu7gfb+Z1e0U4HKbTwnpRaVeseyzwW09wbpUNdZ4bbjs6UIeDcUJL0hqi+xJvGhcMnQvnnYHpd6ebT5lmTUKuKVfj13Y0DWVtvG9JzzsX+3G61yCjtxboGsswtcjYcbDcQ6t9dD+qEZNkR09EueL4TCH+kMZk76xs0T5tFkBj3cMzB44cmsu48ZNfjt/tJWg2QS7e6fpHI0k7WutdPLN00U0dE/x12x6donN79S7eX9d4XEFvPjs2WDT+Qlzc3/ZWMgrNW6O3AzRcTM5g3fr3fw3L1Gezba2Vjj5bbuvVwHHqzonK8fD5hZ/ptzB760lDAZjrD2VXPprO3w0nQkSWsgun0dcgrFdZXcUMFzw3d2CiHk1FqU88ryfaq+d9b/oDEwtRd9caueNVW729s1YiRXNBvMvlc/nBFTRjq7zcLjewwe3QhweWCrriSc9dI1HOXvHutcagZYlVcHXFNv5s92/qNSan3RsQF+bj0B3kCzFWcncWFJL0SROqffaWOqk4VedYqdgZ5XGgeuZbZBaY6NojnUMzB40s4Xx4P7VLk5s9PLRYAi/ZuOTobmV97R6RKMtTI2fGqTKLfj7hVLGQnFuzyzQ3DNtxVn5bjS+EmHG1pYp2pmWYrZXahy8PsOHg7k1+qTWdr/Ne191AV8FvDz+o84/c9ZySWveiSyklDn9nlRbfUiZeC63WSDj72k5y/z+gJeh+RsxDKXN3xBlgOZvTDRaIW+DcAo0Meq3AwGTUV8Nvj/nMur/D9GG7NoAzWb9AAAAAElFTkSuQmCC) center no-repeat;
+    background-size: 100%;
+    width:0.36rem;
+    height:0.36rem;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+/***手机登录***/
+.phone_login{
+    padding: 30px;
+}
+.phone_login .form_item{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.phone_login .submit_btn,
+.phone_login .btn{
+    width: 30%;
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #00a5eb;
+    cursor: pointer;
+}
+.phone_login .submit_btn{
+    width:100%;
+    }
+.phone_login #error_msg{
+    width: 100%;
+    min-height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #ff0000;
+}
+.phone_login input{
+    width:65%;
+    height: 34px;
+    line-height: 34px;
+    padding: 9px 0;
+    text-indent: 6px;
+    font-size: 12px;
+    border: 1px solid #d3d3d3;
+    color: #333;
+}
+
+@media  screen and (min-width:320px) {
+    .searchresult_item .item_right .footer_name{width: 1.4rem;}
+}

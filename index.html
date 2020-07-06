@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #loadmorefar{
+            position: relative;
+        }
+        #loadmore{
+            height: 100%;
+            background: pink;
+            transition: all .5s;
+            position: relative;
+            z-index: 999;
+        }
+        #loadone{
+            position: absolute;
+            top: 20px;
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+        #loadtwo{
+            position: absolute;
+            bottom: -20px;
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="loadmorefar">
+        <div id="loadmore">
+            <ul id="ul">
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+         window.onload = function() {
+            loadmore({
+                pull:function (value) {
+                    console.log(value)
+                },
+                push:function (value) {
+                    console.log(value)
+                }
+            })
+         }
+         function loadmore(obj){
+ 
+            let one = document.createElement('div');
+            one.id = 'loadone';
+            one.innerText = '下拉刷新';
+            document.getElementById('loadmorefar').appendChild(one);
+
+            let two = document.createElement('div');
+            two.id = 'loadtwo';
+            two.innerText = '上拉加载';
+            document.getElementById('loadmorefar').appendChild(two);
+
+
+            // 上拉加载下拉刷新功能
+            var s;
+            document.getElementById('loadmore').ontouchstart = function (e) {
+                s = e.changedTouches[0].pageY
+            };
+            document.getElementById('loadmore').ontouchmove = function (e) {
+                let m = e.changedTouches[0].pageY;
+                document.getElementById('loadtwo').innerText = '';
+                // 下拉动画
+                if ((m - s) > 100) {
+                    document.getElementById('loadone').style.display = 'block';
+                    document.getElementById('loadone').innerText = '下拉刷新';
+                    document.getElementById('loadmore').style.transform = 'translate(0,150px)';
+                    if (m - s > 250) {
+                        document.getElementById('loadone').innerText = '释放刷新'
+                    }
+                    docgjument.getElementById('loadmore').ontouchend = function () {
+                        document.getElementById('loadone').innerText = '刷新中...';
+                        document.getElementById('loadmore').style.transform = 'translate(0,0px)';
+                        // 触发的函数
+                        obj.pull('下拉刷新');
+                    }
+                }
+
+                // 上拉动画
+                if ((m - s) < -150) {
+                    document.getElementById('loadone').innerText = '';
+                    document.getElementById('loadtwo').style.display = 'block';
+                    document.getElementById('loadtwo').innerText = '加载中...';
+                    document.getElementById('loadmore').style.transform = 'translate(0,-70px)';
+                    document.getElementById('loadmore').ontouchend = function () {
+                        document.getElementById('loadmore').style.transform = 'translate(0,0px)';
+                        document.getElementById('loadtwo').innerText = '上拉加载更多';
+                        // 触发的函数
+                        obj.push('上拉加载');
+                        for (var i = 0; i < 10; i++) {
+                            let no = document.createElement('li');
+                            no.innerText = 2;
+                            document.getElementById('ul').appendChild(no)
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.wrap {-webkit-box-sizing: border-box;overflow: hidden;background-color: #eceeed;margin: -10px auto 0;padding: 10px;}
+.w95 {margin: 95%;margin: 0 auto}
+.mt10 {margin: 10px auto;}
+
+.h_back {position: absolute;background: url(../img/goback40.png) no-repeat;width: 20px;height: 20px; background-size:auto 20px;display: block;position: absolute;left: 10px;top: 20px;}
+.c {position: absolute;background: url(../img/huifu_zhankai.png) no-repeat;width: 11px;height: 16px;display: block;position: absolute;left: 6px;top: 12px;padding: 0 8px;}
+.qa_list {width: 100%;margin: 0 auto}
+.qa_list li {line-height: 24px;font-size: 14px;color: #666;background-color: #ffffff;padding-bottom: 15px;margin-bottom: 10px;border-bottom: 1px solid #c8c8c8;}
+
+.qa_list li .q_name {color: #00a5eb;font-size: 10px;line-height:20px;margin-top:10px;}
+.qa_list li .q_name span {float: right;color: #c8c8c8;}
+.qa_list li .q_name span a{color: #555555;}
+.qa_list li .q_name em{width:12px;height:12px;margin:2px 0 0 4px;display:inline-block;vertical-align: top;background: url(../img/user_v22.png) no-repeat 0 0px;background-size:auto 12px;}
+
+
+.qa_list li .qr_name {color: #00a5eb;font-size: 10px;line-height:16px;padding-top:2px;}
+.qa_list li .qr_name em{width:12px;height:12px;margin:2px 0 0 4px;display:inline-block;vertical-align: top;background: url(../img/user_v22.png) no-repeat 0 0px;background-size:auto 12px;}
+.qa_list li .q_name, .qa_list li .q_title, .qa_list li .q_rt, .q_txt {padding: 0 10px;}
+.qa_list li .q_title {color: #222222;font-size: 16px;line-height:26px;}
+.qa_list li .q_title a{color: #222222;font-size: 16px;line-height:26px;}
+
+.hotas {padding: 0 10px;margin-top:12px;}
+.hotas .hotas_l{width: 24px;height:60px;float:left;text-align:center;cursor:pointer;}
+.hotas .hotas_l img{width: 20px;}
+.hotas .hotas_l p{height:14px;line-height:14px;font-size: 10px;padding: 4px 0 0;text-align:center;overflow: hidden;}
+.hotas .hotas_r{margin-left: 26px;}
+
+.q_txt {font-size: 16px;line-height:26px;color: #555555;}
+.qr_txt {font-size: 14px;line-height:22px;}
+.qa_list li .q_rt {font-size: 11px;color: #555555;line-height:16px;padding: 5px 10px;border-bottom: 1px solid #c8c8c8;}
+.qa_list li .q_rt a{color: #929292;}
+.qa_list li .q_txt {padding-bottom: 25px;}
+.line_bg {background: url(../img/line_bg.png) repeat-x;height: 8px;margin: 3px 0;}
+.qa_list .line {background: url(../img/line.png) no-repeat left center;height: 8px;margin: 3px 0;}
+.qa_list .l_bg .line {background: url(../img/line_1.png) no-repeat left center;height: 8px;margin: 3px 0;}
+.qa_list .more {background: url(../img/more.png) no-repeat center center;width: 40%;height: 18px; background-size:16px auto;display: block;margin: 2px auto 0;padding:6px 4px;}
+.list_more {display: block;width: 140px;height: 30px;font-size: 14px;line-height: 30px;margin: 10px auto;border: 1px solid #9fa0a0;text-align: center;color: #7f7f7f;}
+.t {-moz-box-shadow: 2px 21px 2px #999 inset;-webkit-box-shadow: 2px 12px 2px #999 inset;box-shadow: 1px 1px 21px #eee inset;width: 99%;height: 80px;border: 1px solid #ececec;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;color: #666;background: url(../img/tt1.png) no-repeat 10px 10px;}
+.form {
+	width: 98%;
+	margin: 10px auto;
+	text-align: center;
+}
+.t:focus {
+	background: #fff;
+}
+.btn_p {
+	text-align: right;
+	margin: 10px auto;
+}
+.btn_p .btn {
+	width: 75px;
+	height: 32px;
+	background: #01a5ec;
+	border: none;
+	color: #fff;
+	font-family: "寰蒋闆呴粦";
+	font-size: 16px;
+}
+.pl_list {
+}
+.pl_list li {
+	padding: 10px 10px 30px 10px;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.pl_list .pl_name {
+	height: 30px;
+	line-height: 30px;
+	color: #01a5ec;
+	font-size: 16px
+}
+.pl_list .pl_name a {
+	float: right;
+	display: block;
+	background: url(../img/tt2.png) no-repeat;
+	text-indent: 25px;
+	font-size: 16px;
+}
+.pl_list .pl_name .pl_tj_1 {
+	background-position: 0 5px;
+	color: #01a5ec
+}
+.pl_list .pl_name .pl_tj_2 {
+	background-position: 0 -34px;
+	color: #777
+}
+.pl_list .pl_txt {
+	font-size: 14px;
+	color: #666
+}
+
+.back-to .back-top {background: url(../img/back_top.png) no-repeat scroll 0 0 transparent;background-size:41px 41px!important;display: block;float: right;height:41px;outline: 0 none;width: 41px;border:1px solid #cccccc;border-radius: 4px;opacity: 0.8;}
+.back-to .back-top:hover {background-position: 0 0;opacity: 0.6;}

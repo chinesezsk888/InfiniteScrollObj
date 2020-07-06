@@ -1,0 +1,303 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;font-family: "微软雅黑"; font-size: 10px;}
+html{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+body{padding: 0;margin: 0;border: 0;font-family: "微软雅黑";padding-top:55px;-webkit-font-smoothing: antialiased;}
+img{border: 0;}
+a{text-decoration: none;font-size: 1em;}
+
+
+.cont-panel{width: 100%;min-width: 320px;overflow: hidden;}
+.cont-list-p{margin-top: 35px;width: 98%;margin: 0 1%;margin-bottom: 35px;}
+.zw-list{margin-top: 15px;}
+.zw-list .su_h2,
+.zw-list h2{font-size: 1.6em;line-height: 2.4em;margin-left: -9px;}
+.zw-list .su_h3,
+.zw-list h3{font-size: 1.2em;line-height: 1.8em;margin-left: -6px;}
+.zw-list p{font-size: 1.2em;line-height: 1.8em;}
+
+/*v3弹框*/
+.op-bg{ display: block; width: 100%; height: 100%; background-color: #000; position: fixed; left: 0; top: 0; z-index: 99990; opacity:.3; filter: alpha(opacity=30); -moz-opacity: 0.3; }
+.tipbox-panel{ width: 96%; margin-top: 73px; position: absolute; top: 0; left: 2%; z-index: 99992; background-color: #fff; }
+.tipbox-panel .tip-mar{ padding: 0 10px; }
+.tipbox-panel .header{ height: 35px; position: relative; padding: 0; border-bottom: 1px solid #d7d7d7; }
+.tipbox-panel .header .su_h2,
+.tipbox-panel .header h2{ display: block; width: 90px; padding-top: 10px; text-align: left; font-size: 1.4em; line-height: 1.6em; color: #22b1ef; }
+.tipbox-panel .header span{ display: block; width: 21px; height: 21px; background: url(//file.thepaper.cn/wap/v3/img/black-close.png) no-repeat 0 0; background-size: 100%; position: absolute; top: 6px; right: 0; cursor: pointer; }
+.tipbox-panel p{ font-size: 1em; line-height: 1.4em; }
+.tipbox-panel p.tip-dzf{ text-align: right; color: #cdcdcd; padding-top: 5px; }
+.tipbox-panel .register-xy{ height: 30px; line-height: 30px; font-size: 1em; color: #cdcdcd; margin: 10px 0; }
+.tipbox-panel .register-xy a{ color: #00a5ec; }
+.tipbox-panel .register-xy input{ width: 16px; height: 16px; margin-right: 3px; position: relative; top: 3px; border: 1px solid #d7d7d7; }
+.tipbox-panel .register-xydetail{ height: 180px; border: 1px solid #d7d7d7; box-shadow: inset 1px 0 #f1f1f1; padding: 10px; margin-bottom: 10px; overflow: auto; }
+.tipbox-panel .register-xydetail .su_h2,
+.tipbox-panel .register-xydetail h2{ color: #000; font-size: 1.6em; padding-bottom: 12px; font-weight: bold; }
+.tipbox-panel .register-xydetail p{ color: #000; font-size: 1.2em; line-height: 1.8em; font-weight: bold; }
+.tipbox-panel p.tip-tit{ color: #000; font-size: 1.2em; font-weight: bold; padding-top: 10px; padding-bottom: 5px; }
+.tipbox-panel p.tip-msg{ color: #ff1111; padding-top: 10px; padding-bottom: 5px; }
+.tipbox-panel .denglu-sel{ width: 100%; height: 30px; line-height: 30px; margin-top: 10px; font-size: 1em; background-color: #efefef; font-weight: bold; position: relative; }
+.tipbox-panel .denglu-sel-w{ width: 35%; margin-top: 0; margin-bottom: 10px; }
+.tipbox-panel .denglu-sel-h{ width: 100%; margin-bottom: 10px; }
+.tipbox-panel .denglu-sel a.klogin{ color: #00a5ec; }
+.tipbox-panel .denglu-sel .qita-dl{ width: 105px; height: 29px; background-color: #ccc; background: url(//file.thepaper.cn/wap/v3/img/qt-login.png) no-repeat 0 0; background-size: 100%; position: absolute; top: 0; right: 0; }
+.tipbox-panel .denglu-sel .qita-dl span{ display: inline-block; width: 24px; height: 24px; float: right; /*background-color: red; */  margin-right: 9px; margin-top: 3px; cursor: pointer; }
+.tipbox-panel .denglu-sel .qita-dl span a{ display: inline-block; width: 100%; height: 100%; }
+.tipbox-panel .dl-input{ margin-top: 10px; height: 30px; border: 1px solid #d7d7d7; box-shadow: inset 1px 0 #f1f1f1; }
+.tipbox-panel .dl-input input{ width: 98%; padding-left: 2%; height: 30px; font-size: 1.2em; line-height: 30px; color: #cdcdcd; }
+.tipbox-panel .dl-input-w{ width: 70%; }
+.tipbox-panel .dl-input-w80{ width: 78%; }
+.tipbox-panel .dl-input-qt{ margin-top: 10px; height: 30px; position: relative; }
+.tipbox-panel .dl-input-qt span{ display: block; float: right; width: 36px; height: 30px; line-height: 30px; position: absolute; right: 0px; top: 1px; color: #4c4c4c; text-align: center; font-weight: bold; cursor: pointer; }
+.tipbox-panel .dl-input-qt span a{ display: inline-block; width: 100%; height: 100%; }
+.tipbox-panel .dl-input-qt span.get-msg-yzm{ width: 20%; background-color: #00a5ec; color: #fff; }
+.tipbox-panel .dl-input-qt span.img-yzm{ width: 50px; height: 30px; background-color: #ccc; right: 45px; }
+.tipbox-panel .dl-input-qt span.img-yzm img{ width: 50px; height: 30px; }
+.tipbox-panel .submit-panel input{ width: 100%; height: 25px; line-height: 25px; text-align: center; background-color: #00a5ec; color: #fff; font-size: 1.2em; cursor: pointer; margin-bottom: 15px; }
+.tipbox-panel .qt-opr input{ width: 15px; height: 15px; border: 1px solid #d7d7d7; position: relative; top: 3px; }
+.tipbox-panel .qt-opr span{ display: inline-block; float: right; }
+.tipbox-panel .qt-opr{ margin-bottom: 10px; font-weight: bold; }
+.tipbox-panel .qt-opr span{ float: right; cursor: pointer; }
+.tipbox-panel .qt-opr span a{ display: inline-block; width: 100%; height: 100%; color: #000; font-weight: bold; }
+.tipbox-panel .qt-opr span.forgetPwd{ margin-right: 64px; }
+#v3cont_id{width: 100%;overflow: hidden;position: relative;height: auto;}
+#tipbox-panel{top: 0;}
+#tipbox-panel1{top: 360px;}
+#tipbox-panel2{top: 700px;}
+#tipbox-panel3{top: 1070px;}
+#tipbox-panel4{top: 1400px;}
+#tipbox-panel5{top: 1800px;}
+#tipbox-panel6{top: 2600px;}
+#tipbox-panel7{top: 3000px;}
+#tipbox-panel8{top: 3400px;}
+#tipbox-panel9{top: 4100px;}
+
+.lm-guanming{ width: 100%; min-width: 320px; height: 111px; overflow: hidden; background-color: #eceeed; }
+.lm-guanming em{ display: block; width: 30px; height: 30px; background: url(//file.thepaper.cn/wap/v3/img/lm-guanming.png) no-repeat 0 0; background-size: 100%; margin: 16px auto 5px; }
+.lm-guanming ul.guanming-tit{ width: 260px; height: 25px; margin: 0 auto; border-bottom: 1px solid #c8c8c8; }
+.lm-guanming ul.guanming-tit li{ color: #333; width: 100%; font-size: 1.7em; text-align: center; display: inline-block; }
+.lm-guanming ul.guanming-tit li span{ display: inline-block; padding: 0 10px; background-color: #ccc; color: #fff; text-align: center; font-size: 10px; }
+.lm-guanming ul.guanming-tit li.w50{ width: 48%; }
+.lm-guanming ul.guanming-tit li.sel{ border-right: 1px solid #c8c8c8; padding-left: 4px; }
+.lm-guanming .guanming-desc{ width: 220px; height: 25px; margin: 0 auto; line-height: 25px; color: #999; text-align: center; }
+
+
+.serch-panel{width: 96%;overflow: hidden;margin-top: 38px;margin: 38px auto 10px;}
+.serch-panel .serch-input{ width: 100%; height: 30px; line-height: 30px; border-bottom: 1px solid #c8c8c8; position: relative; }
+.serch-panel .serch-input em{ display: inline-block; width: 21px; height: 21px; background: url(//file.thepaper.cn/wap/v3/img/v3-serch.png) no-repeat 0 0; background-size: 100%; margin-right: 5px; position: absolute; top: 3px; left: 0; }
+.serch-panel .serch-input input{ width: 76%; margin-left: 8%; font-size: 1.5em; color: #333; }
+.serch-panel .serch-input input.submit{ display: block; width: 13%; background: none; border: 0; color: #555; cursor: pointer; position: absolute; right: 0; top: 3px; }
+.serch-panel .serch-cont{ display: block; margin-top: 10px; }
+.serch-panel .serch-nocont{ display: none; width: 75%; margin: 0 auto; margin-top: 150px; font-size: 1.5em; color: #666; text-align: center; }
+.serch-panel .serch-cont ul li{ height: 54px; border-bottom: 1px solid #c8c8c8; }
+.serch-panel .serch-cont ul li .su_h2,
+.serch-panel .serch-cont ul li h2{ color: #333; font-size: 1.5em; font-weight: normal; line-height: 2em; }
+.serch-panel .serch-cont ul li p{ color: #666; font-size: 1.2em; }
+
+.userinfo-panel{ width: 98%; margin: 0 auto; margin-top: 60px; }
+.userinfo-panel p{ height: 44px; border-bottom: 1px solid #c8c8c8; }
+.userinfo-panel p span{ display: inline-block; float: left; margin-top: 7px; }
+.userinfo-panel p span.nname{ font-size: 1.5em; color: #333; width: 20%; }
+.userinfo-panel p span.text{ font-size: 1em; color: #555; margin-left: 22%; margin-top: 10px; }
+.userinfo-panel p span.text em.bz{ display: inline-block; width: 8px; height: 8px; background: url(//file.thepaper.cn/wap/v3/img/shiming-bz.png) no-repeat 0 0; background-size: 100%; }
+.userinfo-panel p span.jiantou{ float: right; width: 17px; height: 24px; background: url(//file.thepaper.cn/wap/v3/img/ujiantou.png) no-repeat 0 0; background-size: 100%; cursor: pointer; margin-right: 10px; }
+.userinfo-panel .logout{ width: 100%; min-width: 320px; height: 30px; line-height: 30px; text-align: center; font-size: 1.4em; color: #fff; background-color: #01a5ec; border-radius: 5px; margin: 15px auto; }
+.userinfo-panel .logout input{ width: 100%; min-width: 320px; height: 30px; line-height: 30px; text-align: center; font-size: 1em; color: #fff; background-color: #01a5ec; border-radius: 5px; }
+
+/*footer*/
+.v3-footer{ width: 100%; min-width: 320px; overflow: hidden; /*position: absolute; left: 0; bottom: 0; */}
+.v3-footer ul{ width: 100%; overflow: hidden; background-color: #2e2d33; padding-top: 27px; }
+.v3-footer ul li{ display: block; float: left; width: 33%; line-height: 18px; min-height: 18px; max-height: 36px; color: #cacacb; font-size: 1.4em; line-height: 1.8em; text-align: center; margin-bottom: 27px; }
+.v3-footer ul li.sel{ border-right: 1px solid #34353c; }
+.v3-footer ul li a{ display: block; color: #cacacb; font-size: 1em; line-height: 1em; text-align: center; }
+.v3-footer .v3-footer-ic{ background-color: #222126; padding: 10px 0; }
+.v3-footer p{ display: block; text-align: center; color: #cacacb; font-size: 1.2em; line-height: 1.8em; }
+
+/*share box*/
+.v3-shareBox{ width: 100%; height: 172px; background-color: #fff; position: fixed; left: 0; top: 0; z-index: 999; display: none; }
+.v3-shareBox .su_h2,
+.v3-shareBox h2{ display: block; font-size: 2em; line-height: 2em; margin-top: 1em; color: #2d2c31; padding-left: 1em; font-weight: normal; }
+.v3-shareBox span{ display: block; width: 20px; height: 20px; margin: 20px auto; background: url(//file.thepaper.cn/wap/v3/img/v3-023.png) no-repeat 0 0; background-size: 100%; cursor: pointer; }
+.v3-shareBox .share-list{ width: 100%; min-width: 320px; min-height: 50px; max-height: 100px; position: relative; overflow: hidden; }
+.v3-shareBox .share-list img{ width: 100%; min-width: 320px; max-height: 100px; position: absolute; left: 0; top: 0; }
+.v3-shareBox ul{ width: 100%; min-height: 50px; max-height: 100px; /*background: url(//file.thepaper.cn/wap/v3/img/detail-share.png) no-repeat 0 0; background-size: 100%; */ margin-top: 10px; position: absolute; left: 0; top: 0; }
+
+.v3-shareBox ul li{ display: block; width: 24.5%; height: 42px; float: left; border-right: 1px solid #ddd; }
+.v3-shareBox ul li.nol{ border-right:none; }
+.v3-shareBox ul li a{ display: block; width: 45px; height: 34px; margin: 4px auto 0; background: url(//file.thepaper.cn/wap/v3/img/detail-share.png) no-repeat 0 0; background-position: -13px -6px; background-size: auto 45px; }
+.v3-shareBox ul li a.wb{ background-position: -13px -6px; }
+.v3-shareBox ul li a.tx{ background-position: -87px -6px; }
+.v3-shareBox ul li a.db{ background-position: -158px -6px; }
+.v3-shareBox ul li a.kj{ background-position: -227px -6px; }
+.share-list img{ display: none; }
+.zt-head-panel{padding:0 10px;}
+.zt-head{ width: 96%; height: 35px; border-top: 5px solid #3e3e46; margin: 30px auto 0;}
+.zt-head1{width: 100%;}
+.zt-head .su_h2,
+.zt-head h2{ line-height: 2em; font-size: 2em; color: #3e3e46;font-weight: bold;}
+.zt-head .dowloadApp{width: 50%;float: right;text-align: right;}
+.zt-head .dowloadApp span{display: inline-block;background-color: #00a4ea;height: 30px;color: #fff;line-height: 30px;padding: 0px 3px;cursor:pointer;}
+.zt-head .dowloadApp a{display: inline-block;background-color: #00a4ea;height: 30px;color: #fff;line-height: 30px;margin: 5px 0 0 0;padding: 0px 3px;cursor:pointer}
+.zt-head .su_h2 a,
+.zt-head h2 a{ color: #929292; display: inline-block; float: right; line-height: 2.5em; font-size: 0.8em; }
+.zj-lm{width: 96%; height: 30px;line-height: 30px;  margin: 0 auto; margin-top: 10px;background-color: #eceeed;}
+.zj-lm .su_h3,
+.zj-lm h3{font-size: 1.6em;padding-left: 5px;color: #555;font-weight: normal;}
+.zt-head-baidu{ width: 98%; height: 5px; border-top: 5px solid #3e3e46; margin: 0 auto; margin-top: 10px; }
+
+/*pinglun*/
+.tj-plOrhf{ width: 98%; overflow: hidden; margin: 0 auto; }
+.tj-plOrhf .tj-plOrhf-cont{ width: 94%; height: 65px; margin: 0 auto; padding: 10px 2%; border: 1px solid #c8c8c8; position: relative; }
+.tj-plOrhf .tj-plOrhf-cont em{ display: block; width: 14px; height: 14px; background: url(//file.thepaper.cn/wap/v3/img/pen.png) no-repeat 0 0; background-size: 100%; position: absolute; left:10px; top: 10px; }
+.tj-plOrhf .tj-plOrhf-cont textarea{ width: 94%; height: 100%; margin-left: 18px; border: 0 none; font-size: 12px; line-height: 14px; color: #ccc; overflow: hidden; }
+.tj-plOrhf p.tip{ padding-left: 15%; height: 25px; line-height: 25px; font-size: 1em; color: #c8c8c8; margin-top: 10px; }
+.tj-plOrhf .tj-plOrhf-nav{ width: 98%; overflow: hidden; margin: 10px auto; border-top: 5px solid #3e3e46; }
+.tj-plOrhf .tj-plOrhf-nav span{ display: inline-block; width: 78px; height: 30px; line-height: 30px; color: #929292; margin-right: 0; font-size: 2em; cursor: pointer; }
+.tj-plOrhf .tj-plOrhf-nav span.cur-color{ color: #333; font-weight: bold; }
+#v3-pl{ display: none; }
+.tj-plOrhf span.sub-btn{ display: inline-block; width: 50px; height: 25px; line-height: 25px; background-color: #b4b4b4; margin-left: 10px; color: #fff; font-size: 1em; text-align: center; float: right; margin-right: 1%; margin-top: -25px; cursor: pointer; }
+.tj-plOrhf span.sub-btn input{ width: 50px; height: 25px; background-color: #b4b4b4; color: #fff; font-size: 1em; }
+
+.top-img{width: 100%;min-width: 320px;overflow: hidden;min-height: 240px;background-color: #666;position: relative;}
+.top-img img{width: 100%;min-width: 320px;}
+.top-img .su_h2.pos,
+.top-img h2.pos{ display: block; width: 100%; height: 60px; line-height: 1.8em; font-size: 1.5em; font-weight: normal; color: #fff; position: absolute; left: 0; bottom: 0; padding-bottom: 15px; }
+.top-img .su_h2.pos i,
+.top-img h2.pos i{ display: block; width: 100%; height: 100%; background-color: #000; opacity: .5; filter:alpha(opacity=30); position: absolute; left: 0; bottom: 0; }
+.top-img .su_h2.pos a,
+.top-img h2.pos a{ display: block; color: #fff; font-size: 1em; position: absolute; left: 0; bottom: 30px; padding: 0 2%; }
+.top-img span.user-v{ display: inline-block; color: #fff; font-size: 1.2em; position: absolute; left: 15px; top: 25px; }
+.top-img span.user-v em{ display: inline-block; width: 12px; height: 12px; background: url(//file.thepaper.cn/wap/v3/img/v3-008.png) no-repeat 0 0; background-size: 100%; margin-left: 3px; position: relative; top: 2px; }
+.top-img a.look-det{ display: inline-block; padding: 5px 10px; background-color: #fff; text-align: center; color: #00a4eb; border-radius: 3px; position: absolute; right: 10px; top: 18px; font-size: 1.4em; }
+.top-img p.top-state-strip{ padding: 0 2%; font-size: 12px; position: absolute; left: 0; bottom: 5px; }
+.top-img p.top-state-strip span{ display: inline-block; margin: 0 10px; background: url(//file.thepaper.cn/wap/v3/img/v3-009.png) no-repeat 0 0; background-size: 100%; width: 12px; height: 12px; }
+.fxOrdz{ width: 100%; overflow: hidden; }
+.fxOrdz-bg{ background-color: #eceeed; margin-top: -20px; width: 96%; padding-left: 2%; }
+
+.fxOrdz p{ display: block; line-height: 1.6em; font-size: 1.2em; padding-left: 2%; padding-right: 2%; color: #888; }
+.fxOrdz p span{ display: inline-block; float: right; }
+.fxOrdz p font{font-size: 1em;}
+.fxOrdz a{ float: left; display: block; width: 49.5%; min-width: 100px; height: 35px; line-height: 35px; text-align: center; color: #fff; background-color: #01a5ec; margin: 20px 0.5% 10px 0; position: relative; font-size:1.4em;vertical-align: top;}
+.fxOrdz a.fx em{ display: inline-block; width: 25px; height: 25px; background: url(//file.thepaper.cn/wap/v3/img/v3-001.png) no-repeat 0 0; background-size: 100%; position: relative; top: 5px; margin-right:3px;}
+.fxOrdz a.dz em{ display: inline-block; width: 25px; height: 25px; background: url(//file.thepaper.cn/wap/v3/img/v3-002.png) no-repeat 0 0; background-size: 100%; position: relative; top: 6px; margin-right:3px; }
+.fxOrdz a.dz em.zan{ background: url(//file.thepaper.cn/wap/v3/img/v3-020.png) no-repeat 0 0;background-size: 100%;}
+.fxOrdz a.dz{ }
+.fxOrdz a img{ width: 22px; height: 22px; position: relative; top: 5px; margin-right: 2px; }
+#pp-download-box{ width: 100%; min-width: 320px; height: 56px; padding: 2% 0; background-color: #474747; /*opacity: .5; */filter:alpha(opacity=50); position: fixed; top: 12%; left: 0; display: none;z-index: 999;}
+#pp-download-box div{ display: block; float: left; margin-top: 4%; }
+#pp-download-box .icon{ width: 41px; height: 41px; background: url(//file.thepaper.cn/wap/v3/img/v3-003.png) no-repeat 0 0; background-size: 100%; margin-left: 2%; margin-top: 2%; }
+#pp-download-box .cont{ font-size: 1.6em; color: #fff; font-weight: bold; margin-left: 3%; }
+#pp-download-box .xz{ float: right; width: 63px; height: 27px; background: url(//file.thepaper.cn/wap/v3/img/v3-005.png) no-repeat 0 0; background-size: 100%; margin-right: 4%; cursor: pointer; }
+#pp-download-box .close-1{ float: right; width: 22px; height: 22px; background: url(//file.thepaper.cn/wap/v3/img/v3-004.png) no-repeat 0 0; background-size: 100%; margin-right: 4%; cursor: pointer; }
+
+.tu-list2{ width: 98%; overflow: hidden;margin: 10px auto 30px;padding-left: 2%;}
+.tu-list2 li{ float: left; width: 46%; overflow: hidden; margin-right: 5%;min-height: 150px;max-height: 240px;}
+.tu-list2 li.clearmr{margin-right: 0;}
+.tu-list2 li a.img{ display: block; width:100%; overflow: hidden;}
+.tu-list2 li a.img img{ display: block; width: 100%;}
+.tu-list2 li a.tit{ display: block; line-height: 1.4em; font-size: 1.4em; color: #4a494e;padding:5px 0 10px;}
+
+.pl-state-strip{ margin: 0; width: 100%; overflow: hidden;}
+.pl-state-strip span{ display: inline-block; font-size: 1em; float: right;}
+.pl-state-strip span.time{ float: left; color: #d2d2d2;margin-top:3px;}
+.pl-state-strip span.xiaoshou-d{ color: #888; text-align: right; margin-right: 0; }
+.pl-state-strip span.cur{color:#01a5ec;}
+.pl-state-strip span.xiaoshou-d em{ display: inline-block; width: 14px; height: 14px; background: url(//file.thepaper.cn/wap/v3/img/v3-015.png) no-repeat 0 0; background-size: 100%; position: relative; top: 0; margin-left: 4px; }
+.pl-state-strip span.xiaoshou-d em.zan{ background: url(//file.thepaper.cn/wap/v3/img/v3-014.png) no-repeat 0 0;background-size: auto 14px;}
+.pl-state-strip span.hf{ color: #888; font-size: 1em; margin: 0px 0px 0 15px; padding-left: 15px; border-left: 1px solid #c8c8c8; position: relative; top: 3px;}
+
+.detail-gm{ width: 100%; margin:10px auto; margin-left:10px;}
+.detail-gm span{ display: inline-block; height: 20px; line-height: 20px; color: #b9b9b9;font-size: 1.2em;}
+.detail-gm span a{font-size: 1em;color: #b9b9b9;}
+.detail-gm span.gg-gmcont{ border-bottom: 1px solid #b9b9b9;}
+.detail-gm span.gg-gm{ background-color: #b9b9b9; width:80px; color: #fff; text-align: center; margin-left: 10px; }
+.news_related .su_h2.v3-ui5{ display: block; line-height: 30px; color: #000; margin: 25px 0; padding: 0 10px; font-size: 22px;}
+.news_related h2.v3-ui5{ display: block; line-height: 30px; color: #000; margin: 25px 0; padding: 0 10px; font-size: 22px;}
+/*ws*/
+.ws-box{ width: 300px; height: 300px; margin: 0 auto; background-color: #333; opacity: .7; color: #fff; position: fixed; left: 10px; top: 15%; z-index: 999; }
+.ws-box p{ margin-top: 25%; margin-left: 10%; color: #fff; font-size: 1.2em; background-color: #333; }
+#hotatlas{font-size:1em;}
+#ccc{/*padding:0 10px;*/}
+.more {background: url(//file.thepaper.cn/wap/v3/img/more.png) no-repeat center center;background-size:16px auto!important;width: 90%;height: 18px;display: block;margin: 8px auto 0;padding:6px 4px;}
+.more_up{background: url(//file.thepaper.cn/wap/v3/img/more_up.png) no-repeat center center !important;background-size:16px auto!important;}
+.about a{color:#ffffff;}
+.newslistspan{display:block;min-height:30px;max-height:52px;line-height:26px; overflow:hidden;color:#494949;font-size:16px;color:#2d2d32;}
+.lh60{line-height:52px !important;text-overflow: ellipsis;white-space: nowrap;}
+.about_news{font-size: 11px;line-height: 15px;color: #636363;position:relative;}
+.FTS-opt{ display: inline-block; float: right; width: 23px; height: 13px; background-color: #888; background: url(//file.thepaper.cn/wap/v3/img/v3-a+.png) no-repeat 0 0; background-size: auto 13px; position: absolute; right: 0; top: 14px;z-index:88;}
+/*定制栏目头部--雄安*/
+.special_lanmu {position: relative;height: 3.6rem;}
+.special_lanmu .header_bg{width:100%;height:1.67rem;overflow:hidden;}
+.special_lanmu .logo{width:0.9rem;height:0.9rem;margin: 0 auto;}
+.special_lanmu .logo img{width:100%;height:100%;}
+.special_lanmu .header_bg img{width:100%;}
+.special_lanmu .header_con{text-align: center;width: 100%;position: absolute;top: 1.1rem;}
+.special_lanmu .title{font-size:0.34rem;color: #333;}
+.special_lanmu .info{font-size:0.22rem;color:#999;line-height:0.42rem;}
+.special_lanmu .header_bg_filter{position:absolute;top:0;}
+.special_lanmu.fixed_header .header_bg_filter,
+.special_lanmu.fixed_header .header_bg{height:1.41rem;}
+.special_lanmu.fixed_header.show{display:block;}
+.special_lanmu.fixed_header{height: 1.71rem;background: #fff;display:none;position:fixed;top:0.8rem;overflow:hidden;z-index:100}
+.special_lanmu.fixed_header .header_con{top: 0.47rem; height: 0.96rem;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.00)), to(#FFFFFF),color-stop(37%, rgba(255,255,255,0.00)));
+background-image: -moz-linear-gradient(top, rgba(255,255,255,0.00) 37%, #FFFFFF 96%);
+background-image: -o-linear-gradient(top, rgba(255,255,255,0.00) 37%, #FFFFFF 96%);
+background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 37%, #FFFFFF 96%);
+}
+.special_lanmu.fixed_header .title{font-size:0.255rem;color:#000;margin-top: 0.06rem;}
+.special_lanmu.fixed_header .logo{width: 0.64rem;height: 0.64rem;}
+/**vue通用样式**/
+.my_msg{font-size:.3rem;color:#fff;background:rgba(0,0,0,.5);border-radius:.06rem;position:fixed;bottom:3.6rem;padding:.03rem .1rem;left:50%;-webkit-transform:translate(-50%);transform:translate(-50%);z-index:1000}
+.fade-enter-active,.fade-leave-active{-webkit-transition:opacity .3s;transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}
+
+/**投票通用样式**/
+.vote__panel,.vote__panel *{-webkit-box-sizing:border-box;box-sizing:border-box}.vote__panel{width:100%;background:#f6f6f6;padding:.4rem .2rem .56rem;margin-bottom:.6rem;line-height:.4rem}.vote__title{font-size:.32rem;line-height:.42rem;color:#000;padding-left:.54rem;position:relative}.vote__title:before{content:"";position:absolute;top:0;left:0;background:url(data:image/png;base64,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) no-repeat;width:.44rem;height:.44rem;background-size:100%}.vote__count{color:#666;padding-left:.78rem;position:relative}.vote__count,.vote__count span{font-size:.2rem}.vote__count:before{content:"";position:absolute;top:.1rem;left:.54rem;background:url(data:image/png;base64,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) no-repeat;width:.2rem;height:.2rem;background-size:100%}.vote__itemlist{margin-top:.22rem}.vote__item{height:auto;width:100%;min-height:.8rem;background:#fff;color:#333;font-size:.3rem;margin-bottom:.02rem;-webkit-box-sizing:content-box;box-sizing:content-box;position:relative}.vote__item__con{width:100%;font-size:.3rem;padding:.18rem 1.16rem .2rem .54rem;z-index:10}.vote__item__bg,.vote__item__con{height:100%;position:absolute;top:0;left:0}.vote__item__bg{width:0;z-index:5;background:#eceeee;-webkit-transition:width .4s;transition:width .4s}.vote__item--select{color:#00a5eb;border:1px solid #00a5eb;-webkit-transform:translate(-1px);transform:translate(-1px)}.vote__item--select .vote__item__percent{color:#00a5eb}.vote__item--select .vote__item__bg{background:#f2fbff}.vote__itemlist--select .vote__item__bg,.vote__itemlist--select .vote__item__percent{display:block}.vote__item__percent{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:.3rem;font-size:.28rem;color:#333;display:none}.vote__item__con__bg{width:100%;height:100%;font-size:.3rem;padding:.18rem 1.16rem .2rem .54rem;visibility:hidden}.myloading{position:fixed;z-index:1000;width:.6rem;height:.6rem;background:#333;border-radius:.06rem;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.myloading div{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAbFBMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8EZPb1AAAAI3RSTlMA+FlyzjSW8Df6awFayR5E6qwc7wfWMR9HagSpfXzs6yX78eaNU7IAAAGqSURBVGje7ZrrcoIwEEbDRSAoclEEwapt3v8dO0hbmdLByZpk2853/obZMzDh9u0KAQAAAJhn6/tbDu/pVSn54t67UTc2zsXZKM6ci71R7DkXqw8ghhjiXy1uykvRV+7FTTwU3iXOxeVYOU5ci89qySzHRWlBXKglcziuhRbEvVoyp+PS0YK42i2Z19GwEK1t3E5JvHjOqyBYWXpIPDBbZGo+cJnrPZe5FUzmVDCZc8FjDjvnr95DPXivDL9J+zbNOwEAAAAwsck8dUeGR+KH8/oYykkhL3uQxJ3UdyKaOJoVWkwft3J2vCJ9tK/mdeRS4urPj1cBRRz8UMj/jWK2S822ufhuJwAAAMBeFNHlaWssidMIX65DjF0bSh814qYuNJi46gRsucGsVytSTM2lzHohamss307etGLjfW3IrB2UH8xk+oTWgJFuAqkZYsBMbP9MzLuKJKY2vCbmniQmt/ju5oIkvpCbml/mC0n8RBv301ySxM80rpPbxowb2rZuyjO5VV/1xblshAUwjgExxH9fzDYsyDYeyTYQKk6SZwSWb+gXAADAv+cdGDuDSWWx2GgAAAAASUVORK5CYII=) no-repeat;width:100%;height:100%;background-size:100%;-webkit-animation:spinning 1.5s linear infinite;animation:spinning 1.5s linear infinite}@-webkit-keyframes spinning{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spinning{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+.news_part .vote__panel{margin-bottom:0}
+/*样式适配*/
+@media  screen and (min-width:320px) {
+        body{padding-top:55px;}
+    .lm-guanming{ width: 100%; min-width: 320px; height: 111px; overflow: hidden; background-color: #eceeed; }
+    .lm-guanming em{ display: block; width: 30px; height: 30px; background: url(//file.thepaper.cn/wap/v3/img/lm-guanming.png) no-repeat 0 0; background-size: 100%; margin: 16px auto 5px; }
+    .lm-guanming ul.guanming-tit{ width: 248px; height: 25px; margin: 0 auto; border-bottom: 1px solid #c8c8c8; }
+    .lm-guanming ul.guanming-tit li{ color: #333; width: 100%; font-size: 1.7em; text-align: center; display: inline-block; }
+    .lm-guanming ul.guanming-tit li span{ display: inline-block; padding: 0 10px; background-color: #ccc; color: #fff; text-align: center; font-size: 10px; }
+    .lm-guanming ul.guanming-tit li.w50{ width: 48%; }
+    .lm-guanming ul.guanming-tit li.sel{ border-right: 1px solid #c8c8c8; padding-left: 0px; }
+    .lm-guanming .guanming-desc{ width: 220px; height: 25px; margin: 0 auto; line-height: 25px; color: #999; text-align: center; }
+    .v3-shareBox{height: 172px;}
+    .v3-shareBox .share-list{height: 50px;}
+    .v3-shareBox .share-list img{height: 50px;}
+    .v3-shareBox{top: 0;}
+    .v3-shareBox .su_h2,
+    .v3-shareBox h2{font-size: 2em;padding-left: 1em;}
+    .v3-shareBox span{width: 20px;  height: 20px;  margin: 20px auto;}
+    #pp-download-box{height: 56px;}
+    #pp-download-box div{margin-top: 5%;}
+    .detail-gm span{height: 20px;line-height: 20px;font-size: 1.2em;}
+    .detail-gm span.gg-gm{width: 80px;}
+        .topic_living{ height:80px; padding:10px 10px 10px; }
+        .topic_living img{ width:80px; height:80px; float:left; }
+        .header{margin-top:-55px;}
+}
+@media  screen and (min-width:640px) {
+        body{padding-top:93px;}
+ 
+    .lm-guanming{height: 219px;}
+    .lm-guanming em{width: 61px;height: 61px;margin-top: 25px;}
+    .lm-guanming ul.guanming-tit{width: 438px;height: 48px;margin-top: 10px;}
+    .lm-guanming ul.guanming-tit li{ font-size: 2.8em;}
+    .lm-guanming ul.guanming-tit li span{ padding: 0 10px; font-size: 20px; }
+    .lm-guanming ul.guanming-tit li.sel{ padding-left: 10px; }
+    .lm-guanming .guanming-desc{ width: 438px; height: 45px;line-height: 45px; font-size: 2em;}
+    .v3-shareBox{height: 298px;}
+    .v3-shareBox .share-list{height: 100px;}
+    .v3-shareBox .share-list img{height: 100px;}
+    .v3-shareBox{top: 0;}
+    .v3-shareBox .su_h2,
+    .v3-shareBox h2{font-size: 3em; padding-left: 1.2em;}
+    .v3-shareBox span{width: 40px;  height: 40px;  margin: 40px auto;}
+    #pp-download-box{height: 62px;}
+    #pp-download-box div{margin-top: 4%;}
+    .detail-gm span{height: 39px;line-height: 39px;font-size: 2em;}
+    .detail-gm span.gg-gm{width: 160px;}
+        .header{margin-top:-93px;}
+}

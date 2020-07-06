@@ -1,0 +1,2794 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="zh-CN" />
+    <meta name="Keywords"
+        content="澎湃，Paper，The Paper，热问答，新闻跟踪，政治，时政，政经，澎湃新闻，新闻，思想，原创新闻，突发新闻，独家报道，上海报业，东方早报，东方报业，上海东方报业" />
+    <meta name="Description"
+        content="澎湃，澎湃新闻，澎湃新闻网，新闻与思想，澎湃是植根于中国上海的时政思想类互联网平台，以最活跃的原创新闻与最冷静的思想分析为两翼，是互联网技术创新与新闻价值传承的结合体，致力于问答式新闻与新闻追踪功能的实践。" />
+    <meta http-equiv="Cache-control" content="max-age=1700" />
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta http-equiv="cleartype" content="on">
+    <title>上直播_澎湃新闻-ThePaper.cn</title>
+    <link href="./img/deskicon.png" sizes="64x64" rel="apple-touch-icon">
+    <link rel="icon" href="./img/thepaper.ico" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/head.css" />
+    <link rel="stylesheet" href="./css/video.css" />
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.history.js"></script>
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="./js/main-1.1.js"></script>
+    <script type="text/javascript" src="./js/sp.js"></script>
+    <script type="text/javascript" src="./js/video.channel.js"></script>
+    <script src="http://img2.cache.netease.com/f2e/wap/common/thirdpartylibs/zepto.1059675.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?d07e4d64d5cde19b5351e7032beaef1a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        video {
+            height: 3.672rem;
+        }
+
+        .column {
+            top: 0;
+            position: fixed;
+        }
+
+        .video_nav .nav_add {
+            z-index: 100;
+        }
+
+        .bar_wrap {
+            position: relative
+        }
+
+        .topnav_item_text {
+            color: #666666;
+        }
+
+        .main_nav_topnav_wrap {
+            background-color: #FFF;
+        }
+
+        .topnav_list_contain::before,
+        .topnav_list_contain::after {
+            content: " ";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            height: .8rem;
+            width: .4rem;
+            z-index: 100;
+            border-left: .08rem solid #fff;
+            background: -webkit-linear-gradient(left, #fff 0, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to right, #fff 0, rgba(255, 255, 255, 0) 100%);
+            pointer-events: none;
+            -webkit-transition: .25s;
+            transition: .25s
+        }
+    </style>
+</head>
+
+<body class="video_body">
+    <div class="header-v4">
+        <!-- logo -->
+        <div class="header-container">
+            <div class="logo">
+                <a href="//m.thepaper.cn/" class="login" title="pengpai"></a>
+                <!-- 预留文字位 -->
+                <a href="channel_26069"
+                    style="background: none;width:95px;overflow: hidden; white-space: nowrap;text-overflow: ellipsis;"><span
+                        class="logon-shuline"></span><span class="toptit-cont" id="toptit"
+                        style="vertical-align: inherit;margin-top: 5px;">视频</span></a>
+            </div>
+        </div>
+
+        <!-- hanbao 默认状态-->
+        <div class="burger-abox" id="moblink_top_detail">
+            <a class="burger-a" id="moblink_top_detail_xiazai" data-statclick="downloadApp" moblink-featured
+                data-moblink="demo/a?contType=23&contId=26166">下载APP</a>
+        </div>
+        <div class="burger-abox" id="vuemoblink_top_xiazai">
+            <a class="burger-a" id="vuemoblink_top_xiazai_btn" data-statclick="downloadApp" moblink-featured>下载APP</a>
+        </div>
+        <div class="burger-p" id="burger">
+            <div class="burger opaque">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- 分类按钮 -->
+        <div class="fl-icon-panel">
+        </div>
+        <div class="fl-icon"></div>
+
+        <!-- 直播区域 -->
+        <a href="living_commtaq.jsp?n=">
+            <div class="zb-icon">
+                <span></span>
+            </div>
+        </a>
+        <!-- 专题区域 -->
+        <div class="zt-icon-p" id="fx"></div>
+        <!-- 右边文字区域  新闻问答详情页右侧-->
+        <div class="right-cont" id="news_right_cont">
+            <a href="newsDetail_forward_">进入原新闻</a>
+        </div>
+        <!-- 右边文字区域  话题问答详情页右侧-->
+        <div class="right-cont" id="ask_right_cont">
+            <a href="asktopic_detail_">进入原话题</a>
+        </div>
+        <!-- 政务相关-->
+        <div class="politics_head politics_head_download">
+            <a class="txt" id="moblink_top_wz_xiazai" moblink-featured
+                data-moblink="demo/a?contType=23&contId=26166">下载APP</a>
+            <a class="icon icon_search" href="govSearch.jsp"></a>
+        </div>
+        <div class="politics_head politics_head_ask">
+            <a class="txt" id="moblink_top_tiwen" moblink-featured data-moblink="demo/a?contType=&contId=">去提问</a>
+            <a class="icon icon_share"></a>
+        </div>
+        <div class="politics_head politics_head_unlogin">
+            <a class="politics_txt" onclick="registerwdsshow()">注册</a>/<a class="politics_txt"
+                onclick="lgwdsshow()">登录</a>
+        </div>
+        <div class="politics_head politics_head_login">
+            <a class="txt" id="moblink_top_xiazai" moblink-featured
+                data-moblink="demo/a?contType=23&contId=26166">下载APP</a>
+            <a class="icon icon_header" href="modifyInfo.jsp"></a>
+        </div>
+        <!-- 右边图片区域 -->
+        <div id="ask_app_down02" data-url="//m.thepaper.cn/download?id=3">
+            <a class="right-img" style="position:fixed;" href="javascript:allPageAppdowncheck('ask_app_down02','',7);"
+                id="moblink_topichead_" moblink-featured data-moblink="demo/a?contType=7&contId=">
+                打开澎湃客户端提问
+            </a>
+        </div>
+    </div>
+
+    <!-- open -->
+    <div class="sy-downward">
+        <div class="upv30-icon"></div>
+        <div class="sy-downward-cont">
+            <div class="user-view-info">
+                <div id="_login">
+                    <ul class="sections-list-big">
+                        <li><a href="modifyInfo.jsp" class="home logined"><i></i><span>已登录</span></a></li>
+                        <li><a href="search.jsp" class="serch"><i></i><span>搜索</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont-list">
+                <div class="scrolly">
+                    <div class="sections-panel ">
+                        <ul class="sections-nav ">
+                            <li class=" cur-state">抗疫<em class="tabline-lf"></em></li>
+                            <li class=" cur-state">视频<em class="tabline-lf"></em></li>
+                            <li class="">时事<em class="tabline-lf"></em></li>
+                            <li class="">财经<em class="tabline-lf"></em></li>
+                            <li class="">思想<em class="tabline-lf"></em></li>
+                            <li class="">生活<em class="tabline-lf"></em><em class="tabline-rg"></em></li>
+                        </ul>
+                    </div>
+                    <ul class="sections-list" style="display: none;">
+                        <li><a href="list_30523">抗疫</a></li>
+                    </ul>
+                    <ul class="sections-list" style="display: block;">
+                        <li><a href="list_28983">AI视频播报</a></li>
+                        <li><a href="list_26188">yang视频2</a></li>
+                        <li><a href="list_26166">上直播</a></li>
+                        <li><a href="list_26468">冯视频</a></li>
+                        <li><a href="list_26151">视频测试默认</a></li>
+                        <li><a href="list_26150">待审核栏目3</a></li>
+                        <li><a href="list_26152">视频测试4</a></li>
+                        <li><a href="list_26153">视频测试5</a></li>
+                        <li><a href="list_26154">毛毛视频测试</a></li>
+                        <li><a href="list_26155">来自远方</a></li>
+                        <li><a href="list_26156">World湃</a></li>
+                        <li><a href="list_26157">栏目七个字测试</a></li>
+                        <li><a href="list_26158">视频测试</a></li>
+                        <li><a href="list_26159">Rey视频</a></li>
+                        <li><a href="list_26160">yang视频</a></li>
+                        <li><a href="list_26161">@所有人</a></li>
+                        <li><a href="list_26162">待审核栏目1</a></li>
+                        <li><a href="list_26165">视频频道14</a></li>
+                        <li><a href="list_26211">《不一样栏目》</a></li>
+                    </ul>
+                    <ul class="sections-list" style="display: none;">
+                        <li><a href="list_30621">唐人街</a></li>
+                        <li><a href="list_26239">暖闻</a></li>
+                        <li><a href="list_26671">测试报道栏目</a></li>
+                        <li><a href="list_26888">澎湃质量报告</a></li>
+                        <li><a href="list_26773">@雄安1</a></li>
+                        <li><a href="list_26466">文人</a></li>
+                        <li><a href="list_25462">中国政库</a></li>
+                        <li><a href="list_25488">中南海</a></li>
+                        <li><a href="list_25489">舆论场</a></li>
+                        <li><a href="list_25490">打虎记</a></li>
+                        <li><a href="list_25423">人事风向</a></li>
+                        <li><a href="list_25426">法治中国</a></li>
+                        <li><a href="list_25424">一号专案</a></li>
+                        <li><a href="list_25463">港台来信</a></li>
+                        <li><a href="list_25491">长三角政商</a></li>
+                        <li><a href="list_25428">直击现场</a></li>
+                        <li><a href="list_25464">知食分子</a></li>
+                        <li><a href="list_25425">绿政公署</a></li>
+                        <li><a href="list_25429">澎湃国际</a></li>
+                        <li><a href="list_25481">外交学人</a></li>
+                        <li><a href="list_25430">澎湃防务</a></li>
+                        <li><a href="list_25678">译中国</a></li>
+                        <li><a href="list_25427">澎湃人物</a></li>
+                        <li><a href="list_25422">浦江头条</a></li>
+                        <li><a href="list_25487">教育家</a></li>
+                        <li><a href="list_25634">全景现场</a></li>
+                        <li><a href="list_25635">美数课</a></li>
+                        <li><a href="list_25600">快看</a></li>
+                    </ul>
+                    <ul class="sections-list" style="display: none;">
+                        <li><a href="list_25633">吴冰冰</a></li>
+                        <li><a href="list_26175">最多5个字</a></li>
+                        <li><a href="list_25438">财经上下游</a></li>
+                        <li><a href="list_25432">自贸区连线</a></li>
+                        <li><a href="list_25433">地产界</a></li>
+                        <li><a href="list_25434">10%公司</a></li>
+                        <li><a href="list_25435">金改实验室</a></li>
+                        <li><a href="list_25436">能见度</a></li>
+                        <li><a href="list_25437">牛市点线面</a></li>
+                        <li><a href="list_25485">澎湃商学院</a></li>
+                    </ul>
+                    <ul class="sections-list" style="display: none;">
+                        <li><a href="list_30595">异次元</a></li>
+                        <li><a href="list_25558">澎湃测试</a></li>
+                        <li><a href="list_26670">德克士2</a></li>
+                        <li><a href="list_26426">冯新闻</a></li>
+                        <li><a href="list_26427">七个字栏目名称</a></li>
+                        <li><a href="list_27182">时事周刊</a></li>
+                        <li><a href="list_26019">思想湃</a></li>
+                        <li><a href="list_27014">《街角社会》</a></li>
+                        <li><a href="list_25444">社论</a></li>
+                        <li><a href="list_26189">上海书评</a></li>
+                        <li><a href="list_25483">思想市场</a></li>
+                        <li><a href="list_25457">私家历史</a></li>
+                        <li><a href="list_25574">翻书党</a></li>
+                        <li><a href="list_25455">艺术评论</a></li>
+                        <li><a href="list_26208">古代艺术</a></li>
+                        <li><a href="list_25450">文化课</a></li>
+                        <li><a href="list_25482">逝者</a></li>
+                        <li><a href="list_25445">澎湃研究所</a></li>
+                        <li><a href="list_25456">市政厅</a></li>
+                        <li><a href="list_25446">请讲话</a></li>
+                        <li><a href="list_25536">专栏</a></li>
+                        <li><a href="list_26006">网文江湖</a></li>
+                        <li><a href="list_25575">阅读联邦1</a></li>
+                    </ul>
+                    <ul class="sections-list" style="display: none;">
+                        <li><a href="list_25578">凝视</a></li>
+                        <li><a href="list_26058">奥运</a></li>
+                        <li><a href="list_26036">文艺范</a></li>
+                        <li><a href="list_25448">有戏</a></li>
+                        <li><a href="list_25599">运动家</a></li>
+                        <li><a href="list_25942">身体</a></li>
+                        <li><a href="list_25842">私家地理</a></li>
+                        <li><a href="list_26190">楼市</a></li>
+                        <li><a href="list_25769">生活方式</a></li>
+                        <li><a href="list_25962">澎湃联播</a></li>
+                        <li><a href="list_25963">私·奔</a></li>
+                        <li><a href="list_25979">视界</a></li>
+                        <li><a href="list_25984">亲子学堂</a></li>
+                        <li><a href="list_26003">赢家</a></li>
+                        <li><a href="list_26004">汽车圈</a></li>
+                        <li><a href="list_26005">车评</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+
+
+    <!-- share box -->
+    <div class="v3-shareBox">
+        <div class="su_h2">分享</div>
+        <div class="share-list">
+
+            <ul>
+                <li><a class="wb" href="javascript:ToSina('','',);" id="news_weibo"></a></li>
+                <li><a class="tx" href="javascript:ToTencent('','',);" id="news_qq"></a></li>
+                <li><a class="db" href="javascript:Torenren('','','',);" id="news_renren"></a></li>
+                <li class="nol"><a class="kj" href="javascript:ToQzone('','',,'');" id="news_qzone"></a></li>
+            </ul>
+        </div>
+        <span class="closeS"></span>
+    </div>
+    <!-- 分类筛选 -->
+    <div class="sy-downward sy-downward-sort" id="sy-downward-sort">
+        <div class="upv30-icon upv30-icon-pos"></div>
+        <div class="sy-downward-flcont">
+            <ul class="sort-cont">
+                <li>
+                    <a href="ask_index.jsp?sort=">
+                        <span class="c1" style="color: #00a4eb;">精选</span>
+                        <span class="c2" style="color: #00a4eb;">Front Page</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25972&sort=">
+                        <span class="c1">时政</span>
+                        <span class="c2">NEWS </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=27404&sort=">
+                        <span class="c1">空白</span>
+                        <span class="c2"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25973&sort=">
+                        <span class="c1">股市</span>
+                        <span class="c2">BUSINESS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26873&sort=">
+                        <span class="c1">直播</span>
+                        <span class="c2">zhibo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25974&sort=">
+                        <span class="c1">学术</span>
+                        <span class="c2">ACADEMIC</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25975&sort=">
+                        <span class="c1">娱乐</span>
+                        <span class="c2">ENTERTAINMENT</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25976&sort=">
+                        <span class="c1">科技</span>
+                        <span class="c2">SCIENCE/TECH</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25977&sort=">
+                        <span class="c1">百科</span>
+                        <span class="c2">GENERAL</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=27185&sort=">
+                        <span class="c1">圆桌</span>
+                        <span class="c2">DISCUSSION</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25980&sort=">
+                        <span class="c1">体育</span>
+                        <span class="c2">SPORT</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25981&sort=">
+                        <span class="c1">电影</span>
+                        <span class="c2">MOVIE</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25982&sort=">
+                        <span class="c1">音乐</span>
+                        <span class="c2">MUSIC</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=25983&sort=">
+                        <span class="c1">艺术</span>
+                        <span class="c2">ART</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26224&sort=">
+                        <span class="c1">讨论</span>
+                        <span class="c2">Discussion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26225&sort=">
+                        <span class="c1">投资</span>
+                        <span class="c2">Investment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26226&sort=">
+                        <span class="c1">运动</span>
+                        <span class="c2">Sports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26227&sort=">
+                        <span class="c1">品味</span>
+                        <span class="c2">Taste</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26229&sort=">
+                        <span class="c1">健康</span>
+                        <span class="c2">Health</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26228&sort=">
+                        <span class="c1">商界</span>
+                        <span class="c2">Business</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26230&sort=">
+                        <span class="c1">明星</span>
+                        <span class="c2">Celebrity</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26231&sort=">
+                        <span class="c1">文艺</span>
+                        <span class="c2">Arts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26232&sort=">
+                        <span class="c1">探索</span>
+                        <span class="c2">Discovery</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26233&sort=">
+                        <span class="c1">政务</span>
+                        <span class="c2">Government Affairs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26234&sort=">
+                        <span class="c1">法律</span>
+                        <span class="c2">Legal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26235&sort=">
+                        <span class="c1">教育</span>
+                        <span class="c2">Education</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26236&sort=">
+                        <span class="c1">思想</span>
+                        <span class="c2">Thoughts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26237&sort=">
+                        <span class="c1">焦点</span>
+                        <span class="c2">Focus</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26238&sort=">
+                        <span class="c1">目击</span>
+                        <span class="c2">Witness</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=26580&sort=">
+                        <span class="c1">随便</span>
+                        <span class="c2"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ask_index.jsp?category=28672&sort=">
+                        <span class="c1">测试</span>
+                        <span class="c2">test</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 操作按钮 -->
+            <span class="retract-up"></span>
+        </div>
+    </div>
+    <!-- 分类帅选 -->
+
+
+    <!-----------------------以下是原来的部分------------------------------->
+
+    <script type="text/javascript">
+
+        function initChannelTab() {
+
+            var currentTab = $(".channel_tab>a.on");
+            var screenWidth = window.screen.width;//屏幕宽
+            var tabWidth = screenWidth / 6.5;//栏目快宽 一屏幕显示7个半
+            var tab = $(".channel_tab>a");
+
+            //默认滚动
+            var currentIndex = 0;
+            for (var i = 0; i < tab.length; i++) {
+                var tabItem = tab.eq(i);
+                if (tabItem.hasClass("on")) {
+                    currentIndex = i;
+                    break;
+                }
+            }
+            var currentLeft = currentIndex * tabWidth;
+            if (currentLeft > screenWidth || currentLeft - screenWidth < tabWidth) {
+                var needScroll = currentLeft - screenWidth + tabWidth + 10;
+                $(".channeltab-panel").scrollLeft(needScroll);
+            }
+            //无滚动不显示过渡层
+            if ($(".channeltab-panel").scrollLeft() == 0) {
+                $(".gl").css("opacity", "0");
+            }
+            //设置栏目快宽度使得末尾显示一半
+            tab.width(tabWidth);
+            var channelWidth = tabWidth * tab.length
+            $(".channel_tab").width(channelWidth);
+            //滑动事件控制过渡层显示隐藏
+            $(".channeltab-panel").on("scroll", function () {
+                var scroll = $(this).scrollLeft();
+                if (scroll == 0) {
+                    $(".gl").css("opacity", "0");
+                } else if (scroll == Math.floor(channelWidth - screenWidth)) {
+                    $(".gr").css("opacity", "0");
+                } else {
+                    $(".gl").css("opacity", "1");
+                    $(".gr").css("opacity", "1");
+                }
+            })
+            $(".channeltab-panel").css("opacity", "1");
+        }
+        $(window).scroll(function () {
+            var st = $(window).scrollTop() || document.documentElement.scrollTop || document.body.scrollTop;
+            if (st > 54) {
+                $(".channeltab-panelbg").addClass("chnfloat");
+            } else {
+                $(".channeltab-panelbg").removeClass("chnfloat");
+            }
+        });
+        $(document).ready(function () {
+
+            initChannelTab();
+
+            $(".list_lanmu").click(function () {
+                if ($(".lanmu_q").css("display") == "none") {
+                    $(".list_lanmu").addClass("bt_cur");
+                    $(".lanmu_q").css('display', 'block');
+                } else {
+                    $(".list_lanmu").removeClass("bt_cur");
+                    $(".lanmu_q").css('display', 'none');
+                }
+            });
+
+            $(".lanmu_shouqi").click(function () {
+                $(".list_lanmu").removeClass("bt_cur");
+                $(".lanmu_q").css('display', 'none');
+            });
+
+            var tbd = $("#lanmu_tb").filter(function (index) { return $("#lanmu_tb", this).css("display") != "none"; });
+            var tbdf = $("#lanmu_tb:eq(0)");
+            var tbdl = $(".lanmu_tblast");    //var tbdl=$("#lanmu_tb").last();
+            $(".lanmu_p").click(function () {
+                if (tbd.prev("#lanmu_tb").length > 0) {
+                    tbd.css('display', 'none');
+                    tbd.prev("#lanmu_tb").css('display', '');
+                    tbd = tbd.prev("#lanmu_tb");
+                } else {
+                    tbd.css('display', 'none');
+                    tbdl.css('display', '');
+                    tbd = tbdl;
+                }
+            });
+
+            $(".lanmu_n").click(function () {
+                if (tbd.next("#lanmu_tb").length > 0) {
+                    tbd.css('display', 'none');
+                    tbd.next("#lanmu_tb").css('display', '');
+                    tbd = tbd.next("#lanmu_tb");
+                } else {
+                    tbd.css('display', 'none');
+                    tbdf.css('display', '');
+                    tbd = tbdf;
+                }
+            });
+
+            $(".list_lm a").click(function () {
+                $(this).addClass("on");
+                $(this).siblings().removeClass("on");
+                var sliderId = $(this).index();
+                $("#slider" + sliderId).css("display", "block");
+                $("#slider" + sliderId).siblings(".sliderchl").css("display", "none");
+            });
+
+        });
+    </script>
+    <!-- 下载条 -->
+    <div id="pp-download-box">
+        <div class="icon"></div>
+        <div class="cont">澎湃新闻客户端</div>
+
+        <div class="close-1"></div>
+        <div class="xz"></div>
+    </div>
+    <script type="text/javascript" id="-moblink-js"
+        src="//f.moblink.mob.com/3.0.1/moblink.js?appkey=1cedb268b6d05"></script>
+
+    <script type="text/javascript">
+        /* $(document).ready(function(){
+        
+        if(typeof(MobLink)!='undefined'){
+        MobLink.init({
+                mobid: "qE",
+                path: "demo/a",
+        showDefaultUI:false,
+        initCallback:initMobLink,
+                params:{"contType":"23","contId":"26166"}
+            });
+        }
+        }); */
+        var downObj = null;
+        $(document).ready(function () {
+            if (typeof (MobLink) != 'undefined') {
+                //MobLink(getMobLinkArray());
+                var mobArray = getMobLinkArray();
+                var mobLen = mobArray.length;
+                var maxMobLen = 30;
+                if (mobLen > maxMobLen) {
+                    var minCount = Math.floor(mobLen / maxMobLen);
+                    var totalCount = (mobLen % maxMobLen == 0) ? (minCount) : (minCount + 1);
+                    for (var c = 0; c < totalCount; c++) {
+                        var endInd = (c + 1) * maxMobLen;
+                        if (endInd >= mobLen) endInd = mobLen;
+                        var insertArray = mobArray.slice(c * maxMobLen, endInd);
+                        try { MobLink(insertArray); }
+                        catch (err) { }
+
+                    }
+                } else {
+                    try {
+                        if (mobLen != 0) {
+                            MobLink(mobArray)
+                        }
+                    }
+                    catch (err) { };
+                }
+            }
+        });
+    </script>
+    <!-- 视频频道 -->
+    <input type="hidden" value="9" id="isdiscont" />
+    <div class="bg-opacity30"></div>
+    <div id="v3cont_id">
+        <!--视频频道导航-->
+        <div>
+            <div class="column" style="display:none;">
+                <div class="column_title"><a href="javascript:hidVideoList();" class="column_close"></a>切换栏目</div>
+                <div class="column_list">
+                    <a href="list_28983" class="bk "><span>AI视频播报</span></a>
+                    <a href="list_26188" class="bk "><span>yang视频2</span></a>
+                    <a href="list_26166" class="bk "><span>上直播</span></a>
+                    <a href="list_26468" class="bk fir"><span>冯视频</span></a>
+                    <a href="list_26151" class="bk "><span>视频测试默认</span></a>
+                    <a href="list_26150" class="bk "><span>待审核栏目3</span></a>
+                    <a href="list_26152" class="bk "><span>视频测试4</span></a>
+                    <a href="list_26153" class="bk fir"><span>视频测试5</span></a>
+                    <a href="list_26154" class="bk "><span>毛毛视频测试</span></a>
+                    <a href="list_26155" class="bk "><span>来自远方</span></a>
+                    <a href="list_26156" class="bk "><span>World湃</span></a>
+                    <a href="list_26157" class="bk fir"><span>栏目七个字测试</span></a>
+                    <a href="list_26158" class="bk "><span>视频测试</span></a>
+                    <a href="list_26159" class="bk "><span>Rey视频</span></a>
+                    <a href="list_26160" class="bk "><span>yang视频</span></a>
+                    <a href="list_26161" class="bk fir"><span>@所有人</span></a>
+                    <a href="list_26162" class="bk "><span>待审核栏目1</span></a>
+                    <a href="list_26165" class="bk "><span>视频频道14</span></a>
+                    <a href="list_26211" class="bk "><span>《不一样栏目》</span></a>
+                </div>
+            </div>
+            <div class="fixedhack">
+                <div class="bar_wrap fixedheader">
+                    <nav class="main_nav">
+                        <div class="main_nav_bar">
+                            <div class="main_nav_wrap main_nav_topnav_wrap">
+                                <div class="topnav_list_contain onscroll">
+                                    <div class="topnav_list_scroll_wrap">
+                                        <div class="topnav_list">
+                                            <div class="topnav_item " id="div_28983">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_28983" class="topnav_item_text">AI视频播报</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26188">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26188" class="topnav_item_text">yang视频2</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26166">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26166" class="topnav_item_text">上直播</a>
+                                                    <a class="nav_on"></a></div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26468">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26468" class="topnav_item_text">冯视频</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26151">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26151" class="topnav_item_text">视频测试默认</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26150">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26150" class="topnav_item_text">待审核栏目3</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26152">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26152" class="topnav_item_text">视频测试4</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26153">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26153" class="topnav_item_text">视频测试5</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26154">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26154" class="topnav_item_text">毛毛视频测试</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26155">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26155" class="topnav_item_text">来自远方</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26156">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26156" class="topnav_item_text">World湃</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26157">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26157" class="topnav_item_text">栏目七个字测试</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26158">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26158" class="topnav_item_text">视频测试</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26159">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26159" class="topnav_item_text">Rey视频</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26160">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26160" class="topnav_item_text">yang视频</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26161">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26161" class="topnav_item_text">@所有人</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26162">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26162" class="topnav_item_text">待审核栏目1</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26165">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26165" class="topnav_item_text">视频频道14</a>
+                                                </div>
+                                            </div>
+                                            <div class="topnav_item " id="div_26211">
+                                                <div class="topnav_item_box">
+                                                    <a href="list_26211" class="topnav_item_text">《不一样栏目》</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                document.getElementById("div_26166").scrollIntoView();
+                //$("#div_26166").scrollIntoView();
+            });
+        </script>
+        <!--视频频道导航结束-->
+        <!---->
+        <div class="video_column">
+            <img src="//139.196.248.235:8089/wap/image/4/108/930.jpg" />
+            <div class="su_h2">上直播</div>
+            <p class="c_line">APP端20161021的描述&nbsp;</p>
+        </div>
+        <!--视频频道列表-->
+        <div class="video_list">
+            <ul id="videoList">
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1274815);" onmouseover="videoMouseOver(1274815);">
+                        <div id="videoDiv_1274815" sdSrc=""
+                            onclick="javascript:playVideo(1274815,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1274815">
+                                <div class="video_card_title">
+                                    <span>华西都市报独家专访</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-02-22</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1274815"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img
+                                src="https://thepaperfile.oss-cn-hangzhou.aliyuncs.com/testthepaper/image/4/105/368.jpg" />
+                            <input type="hidden" value="" id="videoHref_1274815" />
+                            <input type="hidden"
+                                value="https://thepaperfile.oss-cn-hangzhou.aliyuncs.com/testthepaper/image/4/105/368.jpg"
+                                id="videoPoster_1274815" />
+                            <papervideo id="paperVideo_1274815" videoUrl="" shareType="3" shareName='华西都市报独家专访'
+                                sharePic="" shareSummary='在邓小平诞辰110周年之际，华西都市报记者在北京景山后街米粮库胡同人们常说的“邓家院子”里，专访了邓小平的长女邓林。' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1274815,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1274815">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1274815"
+                                        style="color:#999;">在邓小平诞辰110周年之际，华西都市报记者在北京景山后街米粮库胡同人们常说的“邓家院子”里，专访了邓小平的长女邓林。</a>
+                                    <a href="newsDetail_forward_1259201" style="color:#00A5EB;"
+                                        class="video_moreread">延伸阅读&nbsp;》</a>
+                                </div>
+                                <div class="v_topic_href">
+                                    <div class="videorel_topic"><span class="t_category">[ 湃客 ]&nbsp;&nbsp;
+                                        </span><a style="display: inline-block;" href="newsDetail_forward_1285538"><span
+                                                class="t_name">最高温重返30℃以上！上海本周以晴热为主，暂无入梅迹象</span></a></div>
+                                    <div class="videorel_topic"><span class="t_category">[ 问政 ]&nbsp;&nbsp;
+                                        </span><a style="display: inline-block;" href="newsDetail_forward_1318506"><span
+                                                class="t_name">刚刚！上海这些科学家荣获2018国家科学技术奖！...</span></a></div>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="javascript:void(0);">4.1k&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1274815,'920');"
+                                            id="news_praise_1274815">919&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1274815);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1274815" class="op"
+                                            onclick="javascript:videoSumToggle(1274815);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1273732);" onmouseover="videoMouseOver(1273732);">
+                        <div id="videoDiv_1273732" sdSrc=""
+                            onclick="javascript:playVideo(1273732,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1273732">
+                                <div class="video_card_title">
+                                    <span>再来个视频直播吧</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-02-22</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1273732"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/4/129/30.jpg" />
+                            <input type="hidden" value="" id="videoHref_1273732" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/4/129/30.jpg"
+                                id="videoPoster_1273732" />
+                            <papervideo id="paperVideo_1273732" videoUrl="" shareType="3" shareName='再来个视频直播吧'
+                                sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1273732,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1273732">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1273732" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1273732?isComm=true">12&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1273732,'111');"
+                                            id="news_praise_1273732">110&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1273732);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1273732" class=""
+                                            onclick="javascript:videoSumToggle(1273732);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1542998);" onmouseover="videoMouseOver(1542998);">
+                        <div id="videoDiv_1542998" sdSrc=""
+                            onclick="javascript:playVideo(1542998,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1542998">
+                                <div class="video_card_title">
+                                    <span>美国国务院总部首次出现新冠肺炎死亡病例绥芬河</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2天前</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1542998"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/7/515/159.jpg" />
+                            <input type="hidden" value="" id="videoHref_1542998" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/7/515/159.jpg"
+                                id="videoPoster_1542998" />
+                            <papervideo id="paperVideo_1542998" videoUrl="" shareType="3"
+                                shareName='美国国务院总部首次出现新冠肺炎死亡病例绥芬河' sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1542998,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1542998">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1542998" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1542998?isComm=true">12&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1542998,'1');"
+                                            id="news_praise_1542998">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1542998);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1542998" class=""
+                                            onclick="javascript:videoSumToggle(1542998);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1542799);" onmouseover="videoMouseOver(1542799);">
+                        <div id="videoDiv_1542799" sdSrc=""
+                            onclick="javascript:playVideo(1542799,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1542799">
+                                <div class="video_card_title">
+                                    <span>《理解未来》科学讲座：人类冠状病毒的前世今生</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-04-10</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1542799"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/7/513/873.jpg" />
+                            <input type="hidden" value="" id="videoHref_1542799" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/7/513/873.jpg"
+                                id="videoPoster_1542799" />
+                            <papervideo id="paperVideo_1542799" videoUrl="" shareType="3"
+                                shareName='《理解未来》科学讲座：人类冠状病毒的前世今生' sharePic=""
+                                shareSummary='人类冠状病毒到底有哪些？它们来源于哪些动物又在人类引起什么疾病？4月9日晚，香港大学霍广文伉俪基金精准医学教授金冬雁，和大家一起分享人类冠状病毒的前世今生。' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1542799,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1542799">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1542799"
+                                        style="color:#999;">人类冠状病毒到底有哪些？它们来源于哪些动物又在人类引起什么疾病？4月9日晚，香港大学霍广文伉俪基金精准医学教授金冬雁，和大家一起分享人类冠状病毒的前世今生。</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1542799?isComm=true">16&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1542799,'2');"
+                                            id="news_praise_1542799">1&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1542799);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1542799" class="op"
+                                            onclick="javascript:videoSumToggle(1542799);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1542798);" onmouseover="videoMouseOver(1542798);">
+                        <div id="videoDiv_1542798" sdSrc=""
+                            onclick="javascript:playVideo(1542798,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1542798">
+                                <div class="video_card_title">
+                                    <span>探访华中第一高楼，武汉多行业逐步复工</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-04-10</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1542798"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/7/513/861.jpg" />
+                            <input type="hidden" value="" id="videoHref_1542798" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/7/513/861.jpg"
+                                id="videoPoster_1542798" />
+                            <papervideo id="paperVideo_1542798" videoUrl="" shareType="3" shareName='探访华中第一高楼，武汉多行业逐步复工'
+                                sharePic=""
+                                shareSummary='随着城市“解封” ，武汉复工复产正在逐步推进，一批因疫情暂停的建设工程也陆续重启。4月10日，澎湃新闻记者探访正在建设中的“华中第一高楼”武汉绿地中心复工现场。' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1542798,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1542798">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1542798" style="color:#999;">随着城市“解封”
+                                        ，武汉复工复产正在逐步推进，一批因疫情暂停的建设工程也陆续重启。4月10日，澎湃新闻记者探访正在建设中的“华中第一高楼”武汉绿地中心复工现场。</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1542798?isComm=true">16&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1542798,'2');"
+                                            id="news_praise_1542798">1&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1542798);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1542798" class="op"
+                                            onclick="javascript:videoSumToggle(1542798);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1542733);" onmouseover="videoMouseOver(1542733);">
+                        <div id="videoDiv_1542733" sdSrc=""
+                            onclick="javascript:playVideo(1542733,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1542733">
+                                <div class="video_card_title">
+                                    <span>直播录像丨一起“买鄂”：体验挖藕，关注疫情下的湖北农产品</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-04-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1542733"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img
+                                src="https://thepaperfile.oss-cn-hangzhou.aliyuncs.com/testthepaper/image/4/105/368.jpg" />
+                            <input type="hidden" value="" id="videoHref_1542733" />
+                            <input type="hidden"
+                                value="https://thepaperfile.oss-cn-hangzhou.aliyuncs.com/testthepaper/image/4/105/368.jpg"
+                                id="videoPoster_1542733" />
+                            <papervideo id="paperVideo_1542733" videoUrl="" shareType="3"
+                                shareName='直播录像丨一起“买鄂”：体验挖藕，关注疫情下的湖北农产品' sharePic=""
+                                shareSummary='潜江小龙虾、洪湖莲藕、襄阳土鸡蛋，一场疫情让湖北农副产品出现积压滞销。4月2日，澎湃新闻记者来到武汉江夏金水农场，体验挖莲藕，回应湖北农副产品安全担忧。' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1542733,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1542733">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1542733"
+                                        style="color:#999;">潜江小龙虾、洪湖莲藕、襄阳土鸡蛋，一场疫情让湖北农副产品出现积压滞销。4月2日，澎湃新闻记者来到武汉江夏金水农场，体验挖莲藕，回应湖北农副产品安全担忧。</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="javascript:void(0);">4.1k&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1542733,'1');"
+                                            id="news_praise_1542733">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1542733);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1542733" class="op"
+                                            onclick="javascript:videoSumToggle(1542733);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1532256);" onmouseover="videoMouseOver(1532256);">
+                        <div id="videoDiv_1532256" sdSrc=""
+                            onclick="javascript:playVideo(1532256,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1532256">
+                                <div class="video_card_title">
+                                    <span>20200223oms新视频直播</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-02-23</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1532256"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/7/164/191.jpg" />
+                            <input type="hidden" value="" id="videoHref_1532256" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/7/164/191.jpg"
+                                id="videoPoster_1532256" />
+                            <papervideo id="paperVideo_1532256" videoUrl="" shareType="3" shareName='20200223oms新视频直播'
+                                sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1532256,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1532256">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1532256" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1532256?isComm=true">12&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1532256,'1');"
+                                            id="news_praise_1532256">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1532256);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1532256" class=""
+                                            onclick="javascript:videoSumToggle(1532256);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1510788);" onmouseover="videoMouseOver(1510788);">
+                        <div id="videoDiv_1510788" sdSrc=""
+                            onclick="javascript:playVideo(1510788,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1510788">
+                                <div class="video_card_title">
+                                    <span>现在全中国都在战疫，一起来打赢这场仗！</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-02-12</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1510788"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/6/955/343.jpg" />
+                            <input type="hidden" value="" id="videoHref_1510788" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/6/955/343.jpg"
+                                id="videoPoster_1510788" />
+                            <papervideo id="paperVideo_1510788" videoUrl="" shareType="3"
+                                shareName='现在全中国都在战疫，一起来打赢这场仗！' sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1510788,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1510788">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1510788" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1510788?isComm=true">16&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1510788,'1');"
+                                            id="news_praise_1510788">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1510788);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1510788" class=""
+                                            onclick="javascript:videoSumToggle(1510788);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1510230);" onmouseover="videoMouseOver(1510230);">
+                        <div id="videoDiv_1510230" sdSrc=""
+                            onclick="javascript:playVideo(1510230,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1510230">
+                                <div class="video_card_title">
+                                    <span>现在还没有效药物专门治疗</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-02-11</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1510230"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/6/949/29.jpg" />
+                            <input type="hidden" value="" id="videoHref_1510230" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/6/949/29.jpg"
+                                id="videoPoster_1510230" />
+                            <papervideo id="paperVideo_1510230" videoUrl="" shareType="3" shareName='现在还没有效药物专门治疗'
+                                sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1510230,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1510230">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1510230" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1510230?isComm=true">16&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1510230,'1');"
+                                            id="news_praise_1510230">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1510230);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1510230" class=""
+                                            onclick="javascript:videoSumToggle(1510230);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1293670);" onmouseover="videoMouseOver(1293670);">
+                        <div id="videoDiv_1293670" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1293670,false,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1293670">
+                                <div class="video_card_title">
+                                    <span>test-li</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2020-02-10</span>
+                                    <span class="duration">00:34</span>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1293670"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/6/943/910.jpg" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/video/0/0/943.mp4"
+                                id="videoHref_1293670" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/6/943/910.jpg"
+                                id="videoPoster_1293670" />
+                            <papervideo id="paperVideo_1293670" videoUrl="//139.196.248.235:8089/wap/video/0/0/943.mp4"
+                                shareType="6" shareName='test-li'
+                                sharePic="//139.196.248.235:8089/wap/image/6/943/909.jpg" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1293670,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1293670">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1293670" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1293670?isComm=true">&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1293670,'1');"
+                                            id="news_praise_1293670">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1293670);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1293670" class=""
+                                            onclick="javascript:videoSumToggle(1293670);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1433770);" onmouseover="videoMouseOver(1433770);">
+                        <div id="videoDiv_1433770" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1433770,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1433770">
+                                <div class="video_card_title">
+                                    <span>视频直播5</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1433770"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/5/989/301.jpg" />
+                            <input type="hidden" value="" id="videoHref_1433770" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/5/989/301.jpg"
+                                id="videoPoster_1433770" />
+                            <papervideo id="paperVideo_1433770" videoUrl="" shareType="3" shareName='视频直播5' sharePic=""
+                                shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1433770,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1433770">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1433770" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1433770?isComm=true">88&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1433770,'2');"
+                                            id="news_praise_1433770">1&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1433770);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1433770" class=""
+                                            onclick="javascript:videoSumToggle(1433770);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1433769);" onmouseover="videoMouseOver(1433769);">
+                        <div id="videoDiv_1433769" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1433769,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1433769">
+                                <div class="video_card_title">
+                                    <span>视频直播4</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1433769"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/5/989/293.jpg" />
+                            <input type="hidden" value="" id="videoHref_1433769" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/5/989/293.jpg"
+                                id="videoPoster_1433769" />
+                            <papervideo id="paperVideo_1433769" videoUrl="" shareType="3" shareName='视频直播4' sharePic=""
+                                shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1433769,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1433769">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1433769" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1433769?isComm=true">88&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1433769,'2');"
+                                            id="news_praise_1433769">1&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1433769);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1433769" class=""
+                                            onclick="javascript:videoSumToggle(1433769);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1433766);" onmouseover="videoMouseOver(1433766);">
+                        <div id="videoDiv_1433766" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1433766,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1433766">
+                                <div class="video_card_title">
+                                    <span>视频直播3</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1433766"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/5/989/283.jpg" />
+                            <input type="hidden" value="" id="videoHref_1433766" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/5/989/283.jpg"
+                                id="videoPoster_1433766" />
+                            <papervideo id="paperVideo_1433766" videoUrl="" shareType="3" shareName='视频直播3' sharePic=""
+                                shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1433766,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1433766">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1433766" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1433766?isComm=true">88&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1433766,'1');"
+                                            id="news_praise_1433766">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1433766);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1433766" class=""
+                                            onclick="javascript:videoSumToggle(1433766);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1433762);" onmouseover="videoMouseOver(1433762);">
+                        <div id="videoDiv_1433762" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1433762,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1433762">
+                                <div class="video_card_title">
+                                    <span>视频直播2</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1433762"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/5/989/162.jpg" />
+                            <input type="hidden" value="" id="videoHref_1433762" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/5/989/162.jpg"
+                                id="videoPoster_1433762" />
+                            <papervideo id="paperVideo_1433762" videoUrl="" shareType="3" shareName='视频直播2' sharePic=""
+                                shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1433762,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1433762">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1433762" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1433762?isComm=true">88&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1433762,'1');"
+                                            id="news_praise_1433762">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1433762);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1433762" class=""
+                                            onclick="javascript:videoSumToggle(1433762);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1433761);" onmouseover="videoMouseOver(1433761);">
+                        <div id="videoDiv_1433761" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1433761,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1433761">
+                                <div class="video_card_title">
+                                    <span>视频直播1：2019、12、03，测试</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1433761"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/5/989/152.jpg" />
+                            <input type="hidden" value="" id="videoHref_1433761" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/5/989/152.jpg"
+                                id="videoPoster_1433761" />
+                            <papervideo id="paperVideo_1433761" videoUrl="" shareType="3"
+                                shareName='视频直播1：2019、12、03，测试' sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1433761,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1433761">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1433761" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1433761?isComm=true">88&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1433761,'1');"
+                                            id="news_praise_1433761">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1433761);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1433761" class=""
+                                            onclick="javascript:videoSumToggle(1433761);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1332454);" onmouseover="videoMouseOver(1332454);">
+                        <div id="videoDiv_1332454" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1332454,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1332454">
+                                <div class="video_card_title">
+                                    <span>关闭互动--视频直播测试--关闭点赞，视频icon隐藏</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1332454"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <img src="//139.196.248.235:8089/wap/image/4/593/606.jpg" />
+                            <input type="hidden" value="" id="videoHref_1332454" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/593/606.jpg"
+                                id="videoPoster_1332454" />
+                            <papervideo id="paperVideo_1332454" videoUrl="" shareType="3"
+                                shareName='关闭互动--视频直播测试--关闭点赞，视频icon隐藏' sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1332454,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1332454">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1332454" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="javascript:void(0);">32&nbsp;</a>
+                                        <a class="v_praise" href="javascript:void(0);">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1332454);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1332454" class=""
+                                            onclick="javascript:videoSumToggle(1332454);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1265852);" onmouseover="videoMouseOver(1265852);">
+                        <div id="videoDiv_1265852" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1265852,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1265852">
+                                <div class="video_card_title">
+                                    <span>直播录像丨多机位视频录播111332</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1265852"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/110/229.jpg" />
+                            <input type="hidden" value="" id="videoHref_1265852" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/110/229.jpg"
+                                id="videoPoster_1265852" />
+                            <papervideo id="paperVideo_1265852" videoUrl="" shareType="3" shareName='直播录像丨多机位视频录播111332'
+                                sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1265852,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1265852">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1265852" style="color:#999;"></a>
+                                    <a href="newsDetail_forward_1266105" style="color:#00A5EB;"
+                                        class="video_moreread">延伸阅读&nbsp;》</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1265852?isComm=true">420&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1265852,'52');"
+                                            id="news_praise_1265852">51&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1265852);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1265852" class="op"
+                                            onclick="javascript:videoSumToggle(1265852);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1396720);" onmouseover="videoMouseOver(1396720);">
+                        <div id="videoDiv_1396720" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1396720,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1396720">
+                                <div class="video_card_title">
+                                    <span>直播录像丨庆祝中华人民共和国成立70周年大会特别报道</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1396720"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/5/448/651.jpg" />
+                            <input type="hidden" value="" id="videoHref_1396720" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/5/448/651.jpg"
+                                id="videoPoster_1396720" />
+                            <papervideo id="paperVideo_1396720" videoUrl="" shareType="3"
+                                shareName='直播录像丨庆祝中华人民共和国成立70周年大会特别报道' sharePic=""
+                                shareSummary='直播录像丨庆祝中华人民共和国成立70周年大会特别报道播放贵航股份更符合法规和覆盖不好搞分恢复规划大锅饭的广泛地' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1396720,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1396720">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1396720"
+                                        style="color:#999;">直播录像丨庆祝中华人民共和国成立70周年大会特别报道播放贵航股份更符合法规和覆盖不好搞分恢复规划大锅饭的广泛地</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1396720?isComm=true">88&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1396720,'18');"
+                                            id="news_praise_1396720">17&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1396720);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1396720" class="op"
+                                            onclick="javascript:videoSumToggle(1396720);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1270255);" onmouseover="videoMouseOver(1270255);">
+                        <div id="videoDiv_1270255" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1270255,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1270255">
+                                <div class="video_card_title">
+                                    <span>直播间|大学直播 fxf</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-12-03</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1270255"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/4/128/925.jpg" />
+                            <input type="hidden" value="" id="videoHref_1270255" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/4/128/925.jpg"
+                                id="videoPoster_1270255" />
+                            <papervideo id="paperVideo_1270255" videoUrl="" shareType="3" shareName='直播间|大学直播 fxf'
+                                sharePic="" shareSummary='大学生考研大大学生考研大学生考研大学生考研大学生考研学生考研大学生考"",./1@#$$%^^&*(' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1270255,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1270255">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1270255"
+                                        style="color:#999;">大学生考研大大学生考研大学生考研大学生考研大学生考研学生考研大学生考"",./1@#$$%^^&*(</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="javascript:void(0);">4.1k&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1270255,'709');"
+                                            id="news_praise_1270255">708&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1270255);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1270255" class="op"
+                                            onclick="javascript:videoSumToggle(1270255);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1286591);" onmouseover="videoMouseOver(1286591);">
+                        <div id="videoDiv_1286591" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1286591,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1286591">
+                                <div class="video_card_title">
+                                    <span>开发人员测试直播</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-06-19</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1286591"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/182/352.jpg" />
+                            <input type="hidden" value="" id="videoHref_1286591" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/182/352.jpg"
+                                id="videoPoster_1286591" />
+                            <papervideo id="paperVideo_1286591" videoUrl="" shareType="3" shareName='开发人员测试直播'
+                                sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1286591,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1286591">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1286591" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1286591?isComm=true">40&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1286591,'24');"
+                                            id="news_praise_1286591">23&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1286591);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1286591" class=""
+                                            onclick="javascript:videoSumToggle(1286591);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1286979);" onmouseover="videoMouseOver(1286979);">
+                        <div id="videoDiv_1286979" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1286979,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1286979">
+                                <div class="video_card_title">
+                                    <span>测试没有画面的视频直播</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-06-18</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1286979"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/184/127.jpg" />
+                            <input type="hidden" value="" id="videoHref_1286979" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/184/127.jpg"
+                                id="videoPoster_1286979" />
+                            <papervideo id="paperVideo_1286979" videoUrl="" shareType="3" shareName='测试没有画面的视频直播'
+                                sharePic="" shareSummary='摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1286979,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1286979">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1286979"
+                                        style="color:#999;">摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1286979?isComm=true">520&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1286979,'18');"
+                                            id="news_praise_1286979">17&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1286979);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1286979" class="op"
+                                            onclick="javascript:videoSumToggle(1286979);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1337165);" onmouseover="videoMouseOver(1337165);">
+                        <div id="videoDiv_1337165" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1337165,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1337165">
+                                <div class="video_card_title">
+                                    <span>推送视频直播 推送视频直播 推送视频直播 推送视频直播 </span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-05-21</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1337165"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/638/644.jpg" />
+                            <input type="hidden" value="" id="videoHref_1337165" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/638/644.jpg"
+                                id="videoPoster_1337165" />
+                            <papervideo id="paperVideo_1337165" videoUrl="" shareType="3"
+                                shareName='推送视频直播 推送视频直播 推送视频直播 推送视频直播 ' sharePic="" shareSummary='摘要' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1337165,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1337165">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1337165" style="color:#999;">摘要</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="javascript:void(0);">4.1k&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1337165,'1');"
+                                            id="news_praise_1337165">0&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1337165);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1337165" class="op"
+                                            onclick="javascript:videoSumToggle(1337165);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1273644);" onmouseover="videoMouseOver(1273644);">
+                        <div id="videoDiv_1273644" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1273644,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>广告</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1273644">
+                                <div class="video_card_title">
+                                    <span>直播录像|大学直播fxf</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-03-06</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1273644"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="https://testimagecloud.thepaper.cn/testthepaper/image/4/128/951.jpg" />
+                            <input type="hidden" value="" id="videoHref_1273644" />
+                            <input type="hidden"
+                                value="https://testimagecloud.thepaper.cn/testthepaper/image/4/128/951.jpg"
+                                id="videoPoster_1273644" />
+                            <papervideo id="paperVideo_1273644" videoUrl="" shareType="3" shareName='直播录像|大学直播fxf'
+                                sharePic="" shareSummary='摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1273644,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1273644">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1273644"
+                                        style="color:#999;">摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要摘要</a>
+                                    <a href="newsDetail_forward_1265331" style="color:#00A5EB;"
+                                        class="video_moreread">延伸阅读&nbsp;》</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="javascript:void(0);">4.1k&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1273644,'144');"
+                                            id="news_praise_1273644">143&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1273644);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1273644" class="op"
+                                            onclick="javascript:videoSumToggle(1273644);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1320607);" onmouseover="videoMouseOver(1320607);">
+                        <div id="videoDiv_1320607" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1320607,false,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1320607">
+                                <div class="video_card_title">
+                                    <span>发啊啊是</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2019-01-24</span>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1320607"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/495/385.jpg" />
+                            <input type="hidden" value="" id="videoHref_1320607" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/495/385.jpg"
+                                id="videoPoster_1320607" />
+                            <papervideo id="paperVideo_1320607" videoUrl="" shareType="6" shareName='发啊啊是'
+                                sharePic="//139.196.248.235:8089/wap/image/4/495/382.jpg" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1320607,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1320607">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1320607" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1320607?isComm=true">&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1320607,'10');"
+                                            id="news_praise_1320607">9&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1320607);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1320607" class=""
+                                            onclick="javascript:videoSumToggle(1320607);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1293663);" onmouseover="videoMouseOver(1293663);">
+                        <div id="videoDiv_1293663" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1293663,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1293663">
+                                <div class="video_card_title">
+                                    <span>问政视频直播间</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2018-11-15</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1293663"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/214/263.jpg" />
+                            <input type="hidden" value="" id="videoHref_1293663" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/214/263.jpg"
+                                id="videoPoster_1293663" />
+                            <papervideo id="paperVideo_1293663" videoUrl="" shareType="3" shareName='问政视频直播间'
+                                sharePic="" shareSummary='境退税试点范围为南宁市、桂林市和防城港市三个设区市，退税商店有33家，商品' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1293663,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1293663">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1293663"
+                                        style="color:#999;">境退税试点范围为南宁市、桂林市和防城港市三个设区市，退税商店有33家，商品</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment"
+                                            href="newsDetail_forward_1293663?isComm=true">5.9k&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1293663,'59');"
+                                            id="news_praise_1293663">58&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1293663);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1293663" class="op"
+                                            onclick="javascript:videoSumToggle(1293663);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1273006);" onmouseover="videoMouseOver(1273006);">
+                        <div id="videoDiv_1273006" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1273006,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1273006">
+                                <div class="video_card_title">
+                                    <span>视频直播测试</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2018-02-08</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1273006"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/127/981.jpg" />
+                            <input type="hidden" value="" id="videoHref_1273006" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/127/981.jpg"
+                                id="videoPoster_1273006" />
+                            <papervideo id="paperVideo_1273006" videoUrl="" shareType="3" shareName='视频直播测试' sharePic=""
+                                shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1273006,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1273006">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1273006" style="color:#999;"></a>
+                                    <a href="newsDetail_forward_1262992" style="color:#00A5EB;"
+                                        class="video_moreread">延伸阅读&nbsp;》</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1273006?isComm=true">180&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1273006,'74');"
+                                            id="news_praise_1273006">73&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1273006);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1273006" class="op"
+                                            onclick="javascript:videoSumToggle(1273006);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1270257);" onmouseover="videoMouseOver(1270257);">
+                        <div id="videoDiv_1270257" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1270257,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1270257">
+                                <div class="video_card_title">
+                                    <span>广告奥迪视频直播</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2018-02-07</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1270257"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/124/58.jpg" />
+                            <input type="hidden" value="" id="videoHref_1270257" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/124/58.jpg"
+                                id="videoPoster_1270257" />
+                            <papervideo id="paperVideo_1270257" videoUrl="" shareType="3" shareName='广告奥迪视频直播'
+                                sharePic="" shareSummary='这是奥迪直播，欢迎观看，不要错过毛泽东喜爱乱世英雄，相信人可胜天。如此叛逆个性梵蒂冈梵蒂冈,似懂非懂是否' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1270257,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1270257">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1270257"
+                                        style="color:#999;">这是奥迪直播，欢迎观看，不要错过毛泽东喜爱乱世英雄，相信人可胜天。如此叛逆个性梵蒂冈梵蒂冈,似懂非懂是否</a>
+                                    <a href="newsDetail_forward_1265331" style="color:#00A5EB;"
+                                        class="video_moreread">延伸阅读&nbsp;》</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="javascript:void(0);">1.6k&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1270257,'111');"
+                                            id="news_praise_1270257">110&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1270257);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1270257" class="op"
+                                            onclick="javascript:videoSumToggle(1270257);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1274989);" onmouseover="videoMouseOver(1274989);">
+                        <div id="videoDiv_1274989" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1274989,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1274989">
+                                <div class="video_card_title">
+                                    <span>测试-视频直播-标题-唐欢</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2017-12-29</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;"><span
+                                        style="vertical-align:middle;color:#ff0000;font-size: .25rem;line-height:.25rem;transform:translate(-50%,-50%);">•&nbsp</span>正在直播</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1274989"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/131/192.jpg" />
+                            <input type="hidden" value="" id="videoHref_1274989" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/131/192.jpg"
+                                id="videoPoster_1274989" />
+                            <papervideo id="paperVideo_1274989" videoUrl="" shareType="3" shareName='测试-视频直播-标题-唐欢'
+                                sharePic=""
+                                shareSummary='我是摘要：摘要，摘要，摘要，酱油是中国传统的调味品。用豆、麦、麸皮酿造的液体调味品。色泽红褐色，有独特酱香，滋味鲜美，有助于促进食欲。' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1274989,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1274989">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1274989"
+                                        style="color:#999;">我是摘要：摘要，摘要，摘要，酱油是中国传统的调味品。用豆、麦、麸皮酿造的液体调味品。色泽红褐色，有独特酱香，滋味鲜美，有助于促进食欲。</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1274989?isComm=true">520&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1274989,'54');"
+                                            id="news_praise_1274989">53&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1274989);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1274989" class="op"
+                                            onclick="javascript:videoSumToggle(1274989);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1266992);" onmouseover="videoMouseOver(1266992);">
+                        <div id="videoDiv_1266992" sdSrc="//139.196.248.235:8089/wap/video/0/0/944.mp4"
+                            onclick="javascript:playVideo(1266992,true,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26166";'><em>上直播</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                    <em>直播</em>
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1266992">
+                                <div class="video_card_title">
+                                    <span>澎湃两周年哟。</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2017-10-23</span>
+                                </div>
+                                <span class="livestr" style="line-height:.25rem;">直播录像</span>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1266992"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <img src="//139.196.248.235:8089/wap/image/4/112/260.jpg" />
+                            <input type="hidden" value="" id="videoHref_1266992" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/112/260.jpg"
+                                id="videoPoster_1266992" />
+                            <papervideo id="paperVideo_1266992" videoUrl="" shareType="3" shareName='澎湃两周年哟。'
+                                sharePic="" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1266992,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1266992">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1266992" style="color:#999;"></a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment"
+                                            href="newsDetail_forward_1266992?isComm=true">1.7k&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1266992,'149');"
+                                            id="news_praise_1266992">148&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1266992);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1266992" class=""
+                                            onclick="javascript:videoSumToggle(1266992);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="video_pic" onmouseout="videoMouseout(1267910);" onmouseover="videoMouseOver(1267910);">
+                        <div id="videoDiv_1267910" sdSrc="//139.196.248.235:8089/wap/video/0/0/947.mp4"
+                            onclick="javascript:playVideo(1267910,false,this,event);return false;">
+                            <div class="vChannel_card_node">
+                                <a href="javascript:void(0);" style="color:#fff;"
+                                    onclick='window.location.href="list_26426";'><em>冯新闻</em></a>
+                                <div class="" style="text-align: center;color:#fff;float:right;margin-right:.2rem;">
+                                </div>
+                            </div>
+                            <div class="vChannel_card_word" id="video_test_1267910">
+                                <div class="video_card_title">
+                                    <span>fxf直播间</span>
+                                </div>
+                                <div class="video_card_vdetail">
+                                    <span class="pub_time">2017-08-31</span>
+                                    <span class="duration">00:04</span>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="video_play11" id="vPlay_1267910"></a>
+                            <div class="vchannel-card-bgimg"></div>
+                            <a href="javascript:void(0);" class="video_play"></a>
+                            <img src="//139.196.248.235:8089/wap/image/4/113/874.jpg" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/video/0/0/946.mp4"
+                                id="videoHref_1267910" />
+                            <input type="hidden" value="//139.196.248.235:8089/wap/image/4/113/874.jpg"
+                                id="videoPoster_1267910" />
+                            <papervideo id="paperVideo_1267910" videoUrl="//139.196.248.235:8089/wap/video/0/0/946.mp4"
+                                shareType="6" shareName='fxf直播间'
+                                sharePic="//139.196.248.235:8089/wap/image/4/113/872.jpg" shareSummary='' />
+                        </div>
+                    </div>
+
+                    <div class="video_info">
+                        <div class="video_title" onclick="jumpDetail(1267910,event);">
+                            <div class="video_txt" style="display:none;" id="vsummary_1267910">
+                                <div class="v_cont_href">
+                                    <a href="newsDetail_forward_1267910" style="color:#999;"></a>
+                                    <a href="newsDetail_forward_1258756" style="color:#00A5EB;"
+                                        class="video_moreread">延伸阅读&nbsp;》</a>
+                                </div>
+                            </div>
+                            <div class="video_comm_panel">
+                                <div class="video_panel_click">
+                                    <div style="width:80%;float:left;">
+                                        <a class="v_comment" href="newsDetail_forward_1267910?isComm=true">&nbsp;</a>
+                                        <a class="v_praise" href="javascript:voteOnCard(1267910,'3');"
+                                            id="news_praise_1267910">2&nbsp;</a>
+                                        <a href="javascript:void(0);" style="" onclick="shareVideo(1267910);"
+                                            class="v_share">&nbsp;</a>
+                                    </div>
+                                    <div style="width:20%;float:right;">
+                                        <a href="javascript:void(0);" style="float:right;" id="op_1267910" class="op"
+                                            onclick="javascript:videoSumToggle(1267910);return false;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="newspath" id="last1" lastTime="1504169043716" pageIndex="1" style="display:none;"></div>
+        <p id="loadnextpage"><span onclick="loadnextpage()" id="more_bt" class="more_bt"
+                style="cursor:pointer;width:160px;">加载更多…</span></p>
+    </div>
+    <div class="back-to" id="toolBackTop"><a title="返回顶部" href="#top" class="back-top" id="backtotop">
+            <!--返回顶部--></a></div>
+    <input type="hidden" id="timestamp" value="1587103352083">
+    </div>
+    <div class="v3-footer">
+        <ul>
+            <li class="sel"><a href="about_paper.jsp">关于澎湃</a></li>
+            <li class="sel"><a href="contact_us.jsp">联系我们</a></li>
+            <li class="sel"><a href="copyright_statement.jsp">版权声明</a></li>
+            <li class="sel"><a href="work_us.jsp">在澎湃工作</a></li>
+            <li class="sel"><a href="paper_ad.jsp">澎湃广告</a></li>
+            <li class="sel"><a href="declaration.jsp">严正声明</a></li>
+        </ul>
+        <div class="v3-footer-ic">
+            <p>Copyright © 2014~2020 The Paper All rights reserved.</p>
+            <p>上海东方报业有限公司</p>
+            <p>沪ICP证：沪B2-20170116 | <a href="http://www.beian.miit.gov.cn/" target="_blank"
+                    style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#cacacb;">沪ICP备14003370号</a>
+            </p>
+            <p>互联网新闻信息服务许可证：31120170006</p>
+            <div style="width:300px;margin:0 auto; padding:0;">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602000299"
+                    [^] style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                    <img src="./img/ghs.png" style="float:left;margin: 0px 0px 0px 50px;" />
+                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;text-align:center;">沪公网安备
+                        31010602000299号
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/login.js?v=3.0"></script>
+    <div id="bg_overlay" style="display:none;"></div><!-- cnzz statistic code -->
+    <div id="cnzz_wap" style="display: none">
+        <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1261102516'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261102516' async type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    </div>
+    <script type="text/javascript">
+        function is_weixin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        var isNewAdVersion = true;
+        if (!is_weixin()) {
+            if (isNewAdVersion) {
+                document.write('<div style="position:fixed;bottom:80px;right:10px" id="ad_demo"><script src="//testad.thepaper.cn/s?c=58&WD-CLIENT-TYPE=05&caid=26166"><\/script></div>');
+            } else {
+                var ad = false;
+                if (ad) {
+                    document.write('<div style="position:fixed;bottom:80px;right:10px" id="ad_demo"><script src="//testad.thepaper.cn/s?c=58&WD-CLIENT-TYPE=05&caid=26166"><\/script></div>');
+                }
+            }
+        }
+
+        getImg();
+        var hostUrl = window.location.host;
+        //var ishttps = 'https:' == document.location.protocol ? 'https://': 'http://';
+        var ishttps = '//';
+        if (hostUrl.indexOf("m.thepaper.cn") > -1) {
+            var nextpageUrl = ishttps + "m.thepaper.cn/load_videoList.jsp";
+        } else if (hostUrl.indexOf("www.thepaper.cn") > -1) {
+            var nextpageUrl = ishttps + "www.thepaper.cn/wap/resource/v3/jsp/load_videoList.jsp";
+        } else {
+            var nextpageUrl = ishttps + hostUrl + "/wap/resource/v3/jsp/load_videoList.jsp";
+        }
+
+        var g_pageidx = 1;
+
+        function loadnextpage() {
+            if ($("#more_bt").attr("data-disabled") == "false") {
+                return;
+            }
+            $("#more_bt").attr("data-disabled", "false");
+            var lastTime = $("#loadnextpage").prev(".newspath").attr("lastTime");
+            var lastEle = $("#videoList>div").last()
+            if (lastEle != null && lastEle.hasClass("newspath")) {
+                g_pageidx = parseInt(lastEle.attr("pageIndex"));
+                lastTime = lastEle.attr("lastTime");
+            }
+            var n_pageidx = g_pageidx + 1;
+            $("#more_bt").html("加载中...");
+            $.ajax({
+                type: "get",
+                url: nextpageUrl,
+                data: "nodeids=26166&topCids=1274815,1273732&pageidx=" + n_pageidx + "&lastTime=" + lastTime + "&mrd=" + Math.random(),
+                timeout: 30000,
+                dataType: "html",
+                success: function (dataHtml) {
+                    $("#more_bt").attr("data-disabled", "true");
+                    if (dataHtml.indexOf("video_pic") > -1 && dataHtml.indexOf("li") > -1) {
+                        $("#videoList").append(dataHtml);
+                        $("#more_bt").html("加载更多…");
+                        ppstore.setItem("localChannelKeys", $(".list_hp").html());
+                    } else if (dataHtml.indexOf("newspath") > -1 && dataHtml.indexOf("t_news") < 0) {
+                        $("#more_bt").html("已经到底");
+                    } else {
+                        $("#more_bt").html("加载出错，请重新点击加载");
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    $("#more_bt").attr("data-disabled", "true");
+                    $("#more_bt").html("加载失败，请重新点击加载");
+                }
+            });
+            getImg();
+        }
+
+        $(function () {
+            $(".v_praise").each(function (idx, item) {
+                var idStartIdx = $(item).attr("id").lastIndexOf("_");
+                var id = $(item).attr("id").substr(idStartIdx + 1, $(item).attr("id").length)
+                if (praiseControll.get("video" + id) != undefined) {
+                    var praiseNum = parseInt($(item).text())
+                    $(item).attr("href", "javascript:void(0);");
+                    $(item).addClass('v_praised');
+                }
+            })
+            $.history.init(function (hash) {
+                $("#more_bt").attr("data-disabled", "true");
+                var timestamp = $("#timestamp").val();
+                if (timestamp == ppstore.getItem("channeltimestamp")) {
+                    if (ppstore.getItem("localChannelKeys") != null && ppstore.getItem("localChannelKeys") != "") {
+                        $(".list_hp").html(ppstore.getItem("localChannelKeys"));
+                        window.scrollTo(0, ppstore.getItem("channelscrollTop"));
+                    }
+                } else {
+                    ppstore.setItem("channeltimestamp", timestamp);
+                    ppstore.setItem("localChannelKeys", "");
+                }
+            });
+        });
+
+        var bt = $('#toolBackTop');
+        $(window).scroll(function () {
+            bt.show();
+            var st = $(window).scrollTop() || document.documentElement.scrollTop || document.body.scrollTop;
+            if (st > 100) {
+                bt.show();
+            } else {
+                bt.hide();
+            }
+            if (st > 54) {
+                $("#chnfloat").addClass("chnfloat");
+            } else {
+                $("#chnfloat").removeClass("chnfloat");
+            }
+
+        });
+
+        $(document).ready(function () {
+            window.onscroll = function () {
+                $("#more_bt").attr("data-disabled", "true");
+                var sts = document.documentElement.scrollTop || document.body.scrollTop;
+                ppstore.setItem("channelscrollTop", sts);
+            }
+
+            //getPics = setInterval("getImg()",2000);
+
+        });
+
+    </script>
+</body>
+
+</html>

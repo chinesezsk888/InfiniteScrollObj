@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>整改代码</title>
+    <script src="demo2/js/jquery-1.8.3.min.js"></script>
+    <script src="./index03.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        .page {
+            padding: 0 20px;
+        }
+
+        /*css*/
+        .pull-down {
+            position: relative;
+            overflow: hidden;
+            height: 0;
+            max-height: 60px;
+        }
+
+        .pull-down-content {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            line-height: 30px;
+            color: #999;
+            width: 100%;
+        }
+
+        #newlist {
+            width: 100%;
+        }
+
+        .img {
+            width: 100%;
+            height: 200px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        #more_bt {
+            height: 28px;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #a1a1a1;
+            border-radius: 2px;
+            color: #7f7f7f;
+            font-size: 11px;
+            line-height: 28px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <!-- <div id="pull-down" class="pull-down">
+            <div class="pull-down-content">松手加载更多</div>
+        </div> -->
+        <ul id="newlist">
+            <li>
+                <h2>告诉孩子：努力不苦，不努力的人生才苦！（深度好文）</h2>
+                <div class="img-box">
+                    <div class="img"> <img src="http://139.196.248.235:8089/www/image/4/103/111.jpg" alt=""></div>
+                    <div class="img"> <img src="http://139.196.248.235:8089/www/image/4/103/111.jpg" alt=""></div>
+                    <div class="img"> <img src="http://image.thepaper.cn/www/image/4/56/117.jpg" alt=""></div>
+                    <div class="img"> <img src="http://139.196.248.235:8089/www/image/4/33/860.jpg" alt=""></div>
+                    <div class="img"> <img src="http://image.thepaper.cn/www/image/4/56/120.jpg" alt=""></div>
+                </div>
+                <div class="tips">
+                    <span>9999阅读</span>
+                    <span>美文</span>
+                </div>
+            </li>
+        </ul>
+        <p id="loadnextpage">
+            <span id="more_bt" class="more_bt" style="cursor: pointer; width: 160px;" data-disabled="true">加载更多中</span>
+        </p>
+        <div class="newspath" id="last1" lastTime="1532938600677" pageindex="1" style="display:none;"></div>
+    </div>
+    <script>
+        $(function () {
+            wapPullUpMore($('#newlist'),'http://localhost:3000/wapPullUpMore');
+        })
+        // function wapUp() {
+        //     //分别设置滑动距离，开始位置，结束位置，和模拟数据的定时器, 节流处理
+        //     let disY, startY, endY, timer, t;
+        //     let type = false
+        //     // 触摸开始
+        //     $('.page').on('touchstart', function (e) {
+        //         startY = e.originalEvent.changedTouches[0].pageY;//开始时的坐标
+        //     });
+        //     //  移动中
+        //     $('.page').on('touchmove', function (e) {
+        //         endY = e.originalEvent.changedTouches[0].pageY;
+        //         // console.log(e)
+        //         disY = endY - startY;//移动后的坐标减去开始坐标，滑动距离。
+        //         // console.log(disY)
+        //         if (disY < 60) {
+        //             $('#pull-down').css({
+        //                 height: disY + 'px' //父盒子的高度随着滑动距离变化，有最大值。
+        //             });
+        //         } else {
+        //             $('#pull-down').css({
+        //                 height: 60 + 'px' //父盒子的最大高度
+        //             });
+        //         }
+        //     });
+        //     // 结束时
+        //     $('.page').on('touchend', function (e) {
+        //         clearInterval(timer);
+        //         endY = e.originalEvent.changedTouches[0].pageY;
+        //         disY = endY - startY;
+        //         if (disY > 30) {
+        //             timer = setInterval(function () {
+        //                 disY -= 5;
+        //                 if (disY <= 30) {
+        //                     $('#pull-down').css({
+        //                         height: 30 + 'px'//松手后的返回。
+        //                     });
+        //                     clearInterval(timer);
+        //                     // refresh();//加载数据
+        //                 }
+        //                 $('#pull-down').css({
+        //                     height: disY + 'px'
+        //                 });
+        //             }, 50)
+        //         }
+        //     })
+        //     // 请求数据
+        //     function refresh() {
+        //         clearTimeout(t);
+        //         t = setTimeout(function () {//延时器模拟的数据请求
+        //             let list = `<li>
+        //                 <h2>第二页</h2>
+        //                 <div class="img-box">
+        //                   <div class="img"> <img src="http://image.thepaper.cn/www/image/4/60/959.jpg" alt=""></div>
+        //                   <div class="img"> <img src="https://testimagecloud.thepaper.cn/testthepaper/image/4/128/951.jpg" alt=""></div>
+        //                   <div class="img"> <img src="http://139.196.248.235:8089/wap/image/4/108/55.jpg" alt=""></div>
+        //                 </div>
+        //                 <div class="tips">
+        //                   <span>阅读</span>
+        //                   <span>666</span>
+        //                 </div>
+        //             </li>`
+        //             $('#newlist').append(list);
+        //             $('#pull-down').css({
+        //                 height: 0
+        //             });
+        //             clearTimeout(t);//定时器技术时候要记得清除，每次调用事件之前，最好也清除下。
+        //         }, 100);
+        //     }
+        //     //获取滚动条当前的位置
+        //     function getScrollTop() {
+        //         var scrollTop = 0;
+        //         if (document.documentElement && document.documentElement.scrollTop) {
+        //             scrollTop = document.documentElement.scrollTop;
+        //         } else if (document.body) {
+        //             scrollTop = document.body.scrollTop;
+        //         }
+        //         return scrollTop;
+        //     }
+        //     //获取当前可视范围的高度
+        //     function getClientHeight() {
+        //         var clientHeight = 0;
+        //         if (document.body.clientHeight && document.documentElement.clientHeight) {
+        //             clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight);
+        //         } else {
+        //             clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight);
+        //         }
+        //         return clientHeight;
+        //     }
+        //     //获取文档完整的高度
+        //     function getScrollHeight() {
+        //         return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+        //     }
+        //     //滚动事件触发
+        //     window.onscroll = function () {
+        //         // 节流处理
+        //         if (type === true) return;
+        //         type = true;
+        //         setTimeout(() => {
+        //             var list;
+        //             if (getScrollTop() + getClientHeight() === getScrollHeight()) {
+        //                 list = `<li>
+        //                     <h2>第二页</h2>
+        //                     <div class="img-box">
+        //                     <div class="img"> <img src="http://139.196.248.235:8089/www/image/4/103/111.jpg" alt=""></div>
+        //                     <div class="img"> <img src="http://139.196.248.235:8089/www/image/4/103/111.jpg" alt=""></div>
+        //                     <div class="img"> <img src="http://139.196.248.235:8089/www/image/4/103/111.jpg" alt=""></div>
+        //                     </div>
+        //                     <div class="tips">
+        //                     <span>阅读</span>
+        //                     <span>666</span>
+        //                     </div>
+        //                     </li>`
+        //             }
+        //             $('#newlist').append(list);
+        //             type = false;
+        //         }, 500)
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
